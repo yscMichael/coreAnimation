@@ -14,15 +14,10 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
-    int x,y,z;
-
-    x=y=z=1;
-
-    ++x||(++y&&++z);
-    NSLog(@"x = %d , y = %d, z = %d",x,y,z);
 }
 
 
