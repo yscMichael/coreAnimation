@@ -56,9 +56,11 @@
 - (void)coreAnimationMethod
 {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(20, 0)];
-    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(0, ScreenHeight)];
-    animation.duration = 5.0f;
+    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.animationView.frame.size.width / 2.0, 25)];
+    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth - 25, 25)];
+    animation.duration = 1.0f;
+    animation.fillMode = kCAFillModeForwards;
+    animation.removedOnCompletion = NO;
     [self.animationView.layer addAnimation:animation forKey:@"positionAnimation"];
 }
 
@@ -78,7 +80,7 @@
 {
     if (!_animationView)
     {
-        _animationView = [[UIView alloc]initWithFrame:CGRectMake(0, 20, 50, 50)];
+        _animationView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
         _animationView.backgroundColor = [UIColor redColor];
     }
     return _animationView;
