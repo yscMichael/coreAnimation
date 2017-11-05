@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175541FAECBC20076F7F6 /* threeMethodsController.m */; };
+		115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175571FAED8AD0076F7F6 /* changeOpacityController.m */; };
 		115AE2F41F938CF800989785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE2F31F938CF800989785 /* main.m */; };
 		115AE2F71F938CF800989785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE2F61F938CF800989785 /* AppDelegate.m */; };
 		115AE2FA1F938CF800989785 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE2F91F938CF800989785 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115175531FAECBC20076F7F6 /* threeMethodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threeMethodsController.h; sourceTree = "<group>"; };
+		115175541FAECBC20076F7F6 /* threeMethodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = threeMethodsController.m; sourceTree = "<group>"; };
+		115175561FAED8AD0076F7F6 /* changeOpacityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changeOpacityController.h; sourceTree = "<group>"; };
+		115175571FAED8AD0076F7F6 /* changeOpacityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changeOpacityController.m; sourceTree = "<group>"; };
 		115AE2EF1F938CF800989785 /* coreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115AE2F31F938CF800989785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		115AE2F51F938CF800989785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +111,10 @@
 				115AE2F61F938CF800989785 /* AppDelegate.m */,
 				115AE2F81F938CF800989785 /* ViewController.h */,
 				115AE2F91F938CF800989785 /* ViewController.m */,
+				115175531FAECBC20076F7F6 /* threeMethodsController.h */,
+				115175541FAECBC20076F7F6 /* threeMethodsController.m */,
+				115175561FAED8AD0076F7F6 /* changeOpacityController.h */,
+				115175571FAED8AD0076F7F6 /* changeOpacityController.m */,
 				115AE2FB1F938CF800989785 /* Main.storyboard */,
 				115AE2FE1F938CF800989785 /* Assets.xcassets */,
 				115AE3001F938CF800989785 /* LaunchScreen.storyboard */,
@@ -276,6 +286,8 @@
 				115AE2FA1F938CF800989785 /* ViewController.m in Sources */,
 				115AE2F71F938CF800989785 /* AppDelegate.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
+				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
+				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +517,7 @@
 				115AE31E1F938CF800989785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		115AE31F1F938CF800989785 /* Build configuration list for PBXNativeTarget "coreAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				115AE3211F938CF800989785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		115AE3221F938CF800989785 /* Build configuration list for PBXNativeTarget "coreAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +535,7 @@
 				115AE3241F938CF800989785 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

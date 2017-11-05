@@ -7,85 +7,83 @@
 //
 
 #import "ViewController.h"
+#import "threeMethodsController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define BarHeight 20
 
-@interface ViewController ()<CAAnimationDelegate>
+@interface ViewController ()<CAAnimationDelegate,UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong) UIView *animationView;
+@property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) NSMutableArray *dataSoure;
+@property (nonatomic,strong) NSMutableArray *controllerSoure;
 
 @end
 
 @implementation ViewController
 
+#pragma mark - Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    [self.view addSubview:self.animationView];
-
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(ScreenWidth - 100, ScreenHeight - 100, 100, 100)];
-    [btn addTarget:self action:@selector(coreAnimationMethod) forControlEvents:UIControlEventTouchUpInside];
-    btn.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:btn];
+    [self.view addSubview:self.tableView];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
-#pragma mark - UIView 代码块调用
-- (void)animateWithDurationMethod
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [UIView animateWithDuration:5.0 animations:^{
-
-        self.animationView.frame = CGRectMake(0, ScreenHeight - 50, 50, 50);
-    } completion:^(BOOL finished) {
-        self.animationView.frame = CGRectMake(0, ScreenHeight / 2.0 - 50, 50, 50);
-    }];
+    Class viewControl = NSClassFromString(self.controllerSoure[indexPath.row]);
+    UIViewController *viewcontroller = [[viewControl alloc]init];
+    [self.navigationController pushViewController:viewcontroller animated:YES];
 }
 
-#pragma mark - UIView [begin commit]模式
-- (void)commitAnimationsMethod
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger) section
 {
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:5.0];
-    self.animationView.frame = CGRectMake(0, ScreenHeight - 50, 50, 50);
-    [UIView commitAnimations];
+    return self.dataSoure.count;
 }
 
-#pragma mark - 使用Core Animation中的类
-- (void)coreAnimationMethod
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-    animation.fromValue = [NSValue valueWithCGPoint:CGPointMake(self.animationView.frame.size.width / 2.0, 25)];
-    animation.toValue = [NSValue valueWithCGPoint:CGPointMake(ScreenWidth - 25, 25)];
-    animation.duration = 1.0f;
-    animation.fillMode = kCAFillModeForwards;
-    animation.removedOnCompletion = NO;
-    [self.animationView.layer addAnimation:animation forKey:@"positionAnimation"];
-}
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell.textLabel.text = self.dataSoure[indexPath.row];
 
-#pragma mark - CAAnimationDelegate
-- (void)animationDidStart:(CAAnimation *)anim
-{
-
-}
-
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
-
+    return cell;
 }
 
 #pragma mark - Getters And Setters
-- (UIView *)animationView
+- (UITableView *)tableView
 {
-    if (!_animationView)
+    if (!_tableView)
     {
-        _animationView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
-        _animationView.backgroundColor = [UIColor redColor];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - BarHeight)];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
     }
-    return _animationView;
+    return _tableView;
 }
 
+- (NSMutableArray *)dataSoure
+{
+    if (!_dataSoure)
+    {
+        _dataSoure = [[NSMutableArray alloc]initWithObjects:@"UIView创建动画的三种方式",@"更改透明度－隐式动画", nil];
+    }
+    return _dataSoure;
+}
+
+- (NSMutableArray *)controllerSoure
+{
+    if (!_controllerSoure)
+    {
+        _controllerSoure = [[NSMutableArray alloc]initWithObjects:@"threeMethodsController",@"changeOpacityController", nil];
+    }
+    return _controllerSoure;
+}
 
 
 @end
