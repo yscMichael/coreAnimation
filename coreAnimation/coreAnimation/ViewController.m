@@ -71,7 +71,7 @@
 {
     if (!_dataSoure)
     {
-        _dataSoure = [[NSMutableArray alloc]initWithObjects:@"UIView创建动画的三种方式",@"更改透明度－隐式动画", nil];
+        _dataSoure = [[NSMutableArray alloc]initWithObjects:@"layer创建",@"UIView-layer显示图片",@"Layer分割图片",@"UIView创建动画的三种方式",@"更改透明度－隐式动画", nil];
     }
     return _dataSoure;
 }
@@ -80,7 +80,7 @@
 {
     if (!_controllerSoure)
     {
-        _controllerSoure = [[NSMutableArray alloc]initWithObjects:@"threeMethodsController",@"changeOpacityController", nil];
+        _controllerSoure = [[NSMutableArray alloc]initWithObjects:@"LayerCreateController",@"layerShowImageController",@"SplitImageController",@"threeMethodsController",@"changeOpacityController", nil];
     }
     return _controllerSoure;
 }
