@@ -90,6 +90,7 @@
     layer.contentsGravity = kCAGravityResize;
 
     //左下角的四分之一拉伸
+    //前提是图片被拉伸才有效
     layer.contentsCenter = CGRectMake(0, 0.5, 0.5, 0.5);
 }
 
