@@ -11,6 +11,7 @@
 @interface redrawViewController ()<CALayerDelegate>
 
 @property (nonatomic,strong) UIView *layerView;
+@property (nonatomic,strong) CALayer *blueLayer;
 
 @end
 
@@ -27,6 +28,7 @@
     CALayer *blueLayer = [CALayer layer];
     blueLayer.frame = CGRectMake(50.0f, 50.0f, 100.0f, 100.0f);
     blueLayer.backgroundColor = [UIColor blueColor].CGColor;
+    self.blueLayer = blueLayer;
 
     //set controller as layer delegate
     blueLayer.delegate = self;
@@ -46,6 +48,13 @@
     CGContextSetLineWidth(ctx, 5.0f);
     CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
     CGContextStrokeEllipseInRect(ctx, layer.bounds);
+}
+
+#pragma mark - 销毁
+//这里必须将delegate设置为nil,否则点击返回键会崩溃
+- (void)dealloc
+{
+    self.blueLayer.delegate = nil;
 }
 
 #pragma mark - Getters And Setters
