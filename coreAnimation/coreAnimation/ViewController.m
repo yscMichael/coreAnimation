@@ -71,7 +71,7 @@
 {
     if (!_dataSoure)
     {
-        _dataSoure = [[NSMutableArray alloc]initWithObjects:@"图层树",@"寄宿图-layer显示图片",@"寄宿图-layer分割图片",@"寄宿图-layer拉伸图片",@"UIView创建动画的三种方式",@"更改透明度－隐式动画", nil];
+        _dataSoure = [[NSMutableArray alloc]initWithObjects:@"图层树",@"寄宿图-layer显示图片",@"寄宿图-layer分割图片",@"寄宿图-layer拉伸图片",@"寄宿图-layer重绘",@"UIView创建动画的三种方式",@"更改透明度－隐式动画", nil];
     }
     return _dataSoure;
 }
@@ -80,7 +80,7 @@
 {
     if (!_controllerSoure)
     {
-        _controllerSoure = [[NSMutableArray alloc]initWithObjects:@"LayerCreateController",@"layerShowImageController",@"SplitImageController",@"stretchViewController",@"threeMethodsController",@"changeOpacityController", nil];
+        _controllerSoure = [[NSMutableArray alloc]initWithObjects:@"LayerCreateController",@"layerShowImageController",@"SplitImageController",@"stretchViewController",@"redrawViewController",@"threeMethodsController",@"changeOpacityController", nil];
     }
     return _controllerSoure;
 }

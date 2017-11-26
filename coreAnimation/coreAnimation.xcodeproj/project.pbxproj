@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1148BDE91FCAB17C0021375B /* stretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BDE81FCAB17C0021375B /* stretchViewController.m */; };
+		1148BDED1FCACBB10021375B /* redrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BDEC1FCACBB10021375B /* redrawViewController.m */; };
 		115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175541FAECBC20076F7F6 /* threeMethodsController.m */; };
 		115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175571FAED8AD0076F7F6 /* changeOpacityController.m */; };
 		1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151755A1FAEECE70076F7F6 /* LayerCreateController.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		1148BDE71FCAB17C0021375B /* stretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stretchViewController.h; sourceTree = "<group>"; };
 		1148BDE81FCAB17C0021375B /* stretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stretchViewController.m; sourceTree = "<group>"; };
+		1148BDEB1FCACBB10021375B /* redrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redrawViewController.h; sourceTree = "<group>"; };
+		1148BDEC1FCACBB10021375B /* redrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = redrawViewController.m; sourceTree = "<group>"; };
 		115175531FAECBC20076F7F6 /* threeMethodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threeMethodsController.h; sourceTree = "<group>"; };
 		115175541FAECBC20076F7F6 /* threeMethodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = threeMethodsController.m; sourceTree = "<group>"; };
 		115175561FAED8AD0076F7F6 /* changeOpacityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changeOpacityController.h; sourceTree = "<group>"; };
@@ -109,6 +112,16 @@
 		1148BDE61FCAA1530021375B /* 寄宿图 */ = {
 			isa = PBXGroup;
 			children = (
+				1148BDEA1FCACB740021375B /* contents属性 */,
+				1148BDEE1FCACBB90021375B /* Custom Drawing */,
+			);
+			name = "寄宿图";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1148BDEA1FCACB740021375B /* contents属性 */ = {
+			isa = PBXGroup;
+			children = (
 				1151755C1FAF3A580076F7F6 /* layerShowImageController.h */,
 				1151755D1FAF3A580076F7F6 /* layerShowImageController.m */,
 				115175631FAF45C70076F7F6 /* SplitImageController.h */,
@@ -116,8 +129,16 @@
 				1148BDE71FCAB17C0021375B /* stretchViewController.h */,
 				1148BDE81FCAB17C0021375B /* stretchViewController.m */,
 			);
-			name = "寄宿图";
-			path = ..;
+			name = "contents属性";
+			sourceTree = "<group>";
+		};
+		1148BDEE1FCACBB90021375B /* Custom Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				1148BDEB1FCACBB10021375B /* redrawViewController.h */,
+				1148BDEC1FCACBB10021375B /* redrawViewController.m */,
+			);
+			name = "Custom Drawing";
 			sourceTree = "<group>";
 		};
 		115AE2E61F938CF800989785 = {
@@ -326,6 +347,7 @@
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
+				1148BDED1FCACBB10021375B /* redrawViewController.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
