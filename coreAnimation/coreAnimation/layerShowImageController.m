@@ -23,24 +23,42 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    UIView *layerView = [[UIView alloc]initWithFrame:CGRectMake(80, 200, 200, 200)];
-    layerView.backgroundColor = [UIColor brownColor];
-    [self.view addSubview:layerView];
+    UIImage *image = [UIImage imageNamed:@"0.jpeg"];
 
-    UIImage *image = [UIImage imageNamed:@"timg.jpeg"];
-    layerView.layer.contents = (__bridge id _Nullable)(image.CGImage);
+    //直接设置图片，图片虚胖
+    UIView *firstView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth / 2, ScreenWidth / 2)];
+    firstView.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:firstView];
+    firstView.layer.contents = (__bridge id _Nullable)(image.CGImage);
 
     //解决虚胖问题、相当于是把图片同比例缩放
-//    layerView.layer.contentsGravity = kCAGravityResizeAspect;
+    UIView *secondView = [[UIView alloc]initWithFrame:CGRectMake(ScreenWidth / 2, 64, ScreenWidth / 2, ScreenWidth / 2)];
+    secondView.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:secondView];
+    secondView.layer.contents = (__bridge id _Nullable)(image.CGImage);
+    //效果一致
+    //secondView.contentMode = UIViewContentModeScaleAspectFit;
+    secondView.layer.contentsGravity = kCAGravityResizeAspect;
 
-    //这个时候，图片会以原图显示
-    layerView.layer.contentsGravity = kCAGravityCenter;
-    //不设置这个就以1个像素点显示，图片更大
-    layerView.layer.contentsScale = [UIScreen mainScreen].scale;
+    //图片会以原图显示
+    UIView *threeView = [[UIView alloc]initWithFrame:CGRectMake(0, ScreenHeight - ScreenWidth / 2, ScreenWidth / 2, ScreenWidth / 2)];
+    threeView.backgroundColor = [UIColor brownColor];
+    [self.view addSubview:threeView];
+    threeView.layer.contents = (__bridge id _Nullable)(image.CGImage);
+    threeView.layer.contentsGravity = kCAGravityCenter;
 
-    //是否显示图层意外的图像、对应UIView的clipsToBounds
-    layerView.layer.masksToBounds = YES;
+    //这里是用来支持高分辨率的、这就是Retina屏幕
+    //设置为1.0则每个点1个像素绘制图片
+    //设置为2.0则每个点2个像素绘制图片
+    threeView.layer.contentsScale = [UIScreen mainScreen].scale;
+    //截取多余图片、效果一致
+    //threeView.clipsToBounds = YES;
+    threeView.layer.masksToBounds = YES;
+
 }
+
+
+
 
 
 @end

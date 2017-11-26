@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1148BDE91FCAB17C0021375B /* stretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BDE81FCAB17C0021375B /* stretchViewController.m */; };
 		115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175541FAECBC20076F7F6 /* threeMethodsController.m */; };
 		115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175571FAED8AD0076F7F6 /* changeOpacityController.m */; };
 		1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151755A1FAEECE70076F7F6 /* LayerCreateController.m */; };
@@ -40,16 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1148BDE71FCAB17C0021375B /* stretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stretchViewController.h; sourceTree = "<group>"; };
+		1148BDE81FCAB17C0021375B /* stretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stretchViewController.m; sourceTree = "<group>"; };
 		115175531FAECBC20076F7F6 /* threeMethodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threeMethodsController.h; sourceTree = "<group>"; };
 		115175541FAECBC20076F7F6 /* threeMethodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = threeMethodsController.m; sourceTree = "<group>"; };
 		115175561FAED8AD0076F7F6 /* changeOpacityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changeOpacityController.h; sourceTree = "<group>"; };
 		115175571FAED8AD0076F7F6 /* changeOpacityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changeOpacityController.m; sourceTree = "<group>"; };
-		115175591FAEECE70076F7F6 /* LayerCreateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerCreateController.h; sourceTree = "<group>"; };
-		1151755A1FAEECE70076F7F6 /* LayerCreateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerCreateController.m; sourceTree = "<group>"; };
-		1151755C1FAF3A580076F7F6 /* layerShowImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerShowImageController.h; sourceTree = "<group>"; };
-		1151755D1FAF3A580076F7F6 /* layerShowImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = layerShowImageController.m; sourceTree = "<group>"; };
-		115175631FAF45C70076F7F6 /* SplitImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitImageController.h; sourceTree = "<group>"; };
-		115175641FAF45C70076F7F6 /* SplitImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitImageController.m; sourceTree = "<group>"; };
+		115175591FAEECE70076F7F6 /* LayerCreateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerCreateController.h; path = coreAnimation/LayerCreateController.h; sourceTree = "<group>"; };
+		1151755A1FAEECE70076F7F6 /* LayerCreateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerCreateController.m; path = coreAnimation/LayerCreateController.m; sourceTree = "<group>"; };
+		1151755C1FAF3A580076F7F6 /* layerShowImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = layerShowImageController.h; path = coreAnimation/layerShowImageController.h; sourceTree = "<group>"; };
+		1151755D1FAF3A580076F7F6 /* layerShowImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = layerShowImageController.m; path = coreAnimation/layerShowImageController.m; sourceTree = "<group>"; };
+		115175631FAF45C70076F7F6 /* SplitImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplitImageController.h; path = coreAnimation/SplitImageController.h; sourceTree = "<group>"; };
+		115175641FAF45C70076F7F6 /* SplitImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplitImageController.m; path = coreAnimation/SplitImageController.m; sourceTree = "<group>"; };
 		115AE2EF1F938CF800989785 /* coreAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115AE2F31F938CF800989785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		115AE2F51F938CF800989785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +96,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1148BDE41FCAA0D40021375B /* 图层树 */ = {
+			isa = PBXGroup;
+			children = (
+				115175591FAEECE70076F7F6 /* LayerCreateController.h */,
+				1151755A1FAEECE70076F7F6 /* LayerCreateController.m */,
+			);
+			name = "图层树";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		1148BDE61FCAA1530021375B /* 寄宿图 */ = {
+			isa = PBXGroup;
+			children = (
+				1151755C1FAF3A580076F7F6 /* layerShowImageController.h */,
+				1151755D1FAF3A580076F7F6 /* layerShowImageController.m */,
+				115175631FAF45C70076F7F6 /* SplitImageController.h */,
+				115175641FAF45C70076F7F6 /* SplitImageController.m */,
+				1148BDE71FCAB17C0021375B /* stretchViewController.h */,
+				1148BDE81FCAB17C0021375B /* stretchViewController.m */,
+			);
+			name = "寄宿图";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		115AE2E61F938CF800989785 = {
 			isa = PBXGroup;
 			children = (
@@ -120,12 +147,8 @@
 				115AE2F61F938CF800989785 /* AppDelegate.m */,
 				115AE2F81F938CF800989785 /* ViewController.h */,
 				115AE2F91F938CF800989785 /* ViewController.m */,
-				115175591FAEECE70076F7F6 /* LayerCreateController.h */,
-				1151755A1FAEECE70076F7F6 /* LayerCreateController.m */,
-				1151755C1FAF3A580076F7F6 /* layerShowImageController.h */,
-				1151755D1FAF3A580076F7F6 /* layerShowImageController.m */,
-				115175631FAF45C70076F7F6 /* SplitImageController.h */,
-				115175641FAF45C70076F7F6 /* SplitImageController.m */,
+				1148BDE41FCAA0D40021375B /* 图层树 */,
+				1148BDE61FCAA1530021375B /* 寄宿图 */,
 				115175531FAECBC20076F7F6 /* threeMethodsController.h */,
 				115175541FAECBC20076F7F6 /* threeMethodsController.m */,
 				115175561FAED8AD0076F7F6 /* changeOpacityController.h */,
@@ -306,6 +329,7 @@
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
+				1148BDE91FCAB17C0021375B /* stretchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

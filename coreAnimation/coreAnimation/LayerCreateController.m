@@ -19,7 +19,6 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-
     UIView *layerView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, 100, 100)];
     layerView.backgroundColor = [UIColor brownColor];
     [self.view addSubview:layerView];

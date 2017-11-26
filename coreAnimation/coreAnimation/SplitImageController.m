@@ -35,7 +35,7 @@
 #pragma mark - Private Methods
 - (void)splitImage
 {
-    UIImage *image = [UIImage imageNamed:@"pintu3.jpg"];
+    UIImage *image = [UIImage imageNamed:@"pingtu3.jpg"];
     [self addSpriteImage:image withContentRect:CGRectMake(0, 0, 0.5, 0.5) toLayer:self.firstView.layer];
     [self addSpriteImage:image withContentRect:CGRectMake(0.5, 0, 0.5, 0.5) toLayer:self.secondView.layer];
     [self addSpriteImage:image withContentRect:CGRectMake(0, 0.5, 0.5, 0.5) toLayer:self.thirdView.layer];
