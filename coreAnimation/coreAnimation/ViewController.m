@@ -109,7 +109,7 @@
                         @"layer分割图片",
                         @"layer拉伸图片",
                         @"layer重绘"],
-                      @[@"锚点-观察frame",@"锚点-闹钟",@"坐标系转化"],
+                      @[@"锚点-观察frame",@"锚点-闹钟",@"坐标系转化",@"Z坐标轴",@"Hit Testing"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -128,7 +128,9 @@
                               @"redrawViewController"],
                             @[@"ChangeAnchorPointController",
                               @"AlarmClockController",
-                              @"ConvertPointController"],
+                              @"ConvertPointController",
+                              @"ZPositionController",
+                              @"HitTestingController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

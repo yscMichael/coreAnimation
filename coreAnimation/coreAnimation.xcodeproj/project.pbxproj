@@ -13,6 +13,10 @@
 		115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115036AA1FD3AED800A33761 /* AlarmClockController.xib */; };
 		115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036B01FD3B3A400A33761 /* ConvertPointController.m */; };
 		115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036B41FD3B46800A33761 /* ChangeAnchorPointController.m */; };
+		115036BD1FD3EBA200A33761 /* ZPositionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036BB1FD3EBA200A33761 /* ZPositionController.m */; };
+		115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115036BC1FD3EBA200A33761 /* ZPositionController.xib */; };
+		115036C21FD3F32200A33761 /* HitTestingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036C01FD3F32200A33761 /* HitTestingController.m */; };
+		115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115036C11FD3F32200A33761 /* HitTestingController.xib */; };
 		115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175541FAECBC20076F7F6 /* threeMethodsController.m */; };
 		115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175571FAED8AD0076F7F6 /* changeOpacityController.m */; };
 		1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151755A1FAEECE70076F7F6 /* LayerCreateController.m */; };
@@ -57,6 +61,12 @@
 		115036B01FD3B3A400A33761 /* ConvertPointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertPointController.m; sourceTree = "<group>"; };
 		115036B31FD3B46800A33761 /* ChangeAnchorPointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAnchorPointController.h; sourceTree = "<group>"; };
 		115036B41FD3B46800A33761 /* ChangeAnchorPointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeAnchorPointController.m; sourceTree = "<group>"; };
+		115036BA1FD3EBA200A33761 /* ZPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPositionController.h; sourceTree = "<group>"; };
+		115036BB1FD3EBA200A33761 /* ZPositionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPositionController.m; sourceTree = "<group>"; };
+		115036BC1FD3EBA200A33761 /* ZPositionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZPositionController.xib; sourceTree = "<group>"; };
+		115036BF1FD3F32200A33761 /* HitTestingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestingController.h; sourceTree = "<group>"; };
+		115036C01FD3F32200A33761 /* HitTestingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestingController.m; sourceTree = "<group>"; };
+		115036C11FD3F32200A33761 /* HitTestingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HitTestingController.xib; sourceTree = "<group>"; };
 		115175531FAECBC20076F7F6 /* threeMethodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threeMethodsController.h; path = coreAnimation/threeMethodsController.h; sourceTree = "<group>"; };
 		115175541FAECBC20076F7F6 /* threeMethodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = threeMethodsController.m; path = coreAnimation/threeMethodsController.m; sourceTree = "<group>"; };
 		115175561FAED8AD0076F7F6 /* changeOpacityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = changeOpacityController.h; path = coreAnimation/changeOpacityController.h; sourceTree = "<group>"; };
@@ -151,9 +161,8 @@
 		1148BDF01FCAF6E00021375B /* 图层几何学 */ = {
 			isa = PBXGroup;
 			children = (
-				115036B21FD3B40900A33761 /* 锚点-观察frame */,
-				115036AD1FD3B32B00A33761 /* 锚点-闹钟 */,
-				115036AE1FD3B36200A33761 /* 坐标系转化 */,
+				115036B71FD3EAED00A33761 /* 锚点 */,
+				115036AE1FD3B36200A33761 /* 坐标系 */,
 			);
 			name = "图层几何学";
 			sourceTree = "<group>";
@@ -232,17 +241,54 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		115036AD1FD3B32B00A33761 /* 锚点-闹钟 */ = {
+		115036AD1FD3B32B00A33761 /* 闹钟 */ = {
 			isa = PBXGroup;
 			children = (
 				115036A81FD3AED800A33761 /* AlarmClockController.h */,
 				115036A91FD3AED800A33761 /* AlarmClockController.m */,
 				115036AA1FD3AED800A33761 /* AlarmClockController.xib */,
 			);
-			name = "锚点-闹钟";
+			name = "闹钟";
 			sourceTree = "<group>";
 		};
-		115036AE1FD3B36200A33761 /* 坐标系转化 */ = {
+		115036AE1FD3B36200A33761 /* 坐标系 */ = {
+			isa = PBXGroup;
+			children = (
+				115036B81FD3EB4200A33761 /* 坐标系转化 */,
+				115036B91FD3EB5900A33761 /* Z坐标轴 */,
+				115036B61FD3EA8C00A33761 /* HitTesting */,
+			);
+			name = "坐标系";
+			sourceTree = "<group>";
+		};
+		115036B21FD3B40900A33761 /* 观察frame */ = {
+			isa = PBXGroup;
+			children = (
+				115036B31FD3B46800A33761 /* ChangeAnchorPointController.h */,
+				115036B41FD3B46800A33761 /* ChangeAnchorPointController.m */,
+			);
+			name = "观察frame";
+			sourceTree = "<group>";
+		};
+		115036B61FD3EA8C00A33761 /* HitTesting */ = {
+			isa = PBXGroup;
+			children = (
+				115036C41FD401D600A33761 /* 判断点的位置 */,
+				115036C51FD401F500A33761 /* 扩大按钮的响应区域 */,
+			);
+			name = HitTesting;
+			sourceTree = "<group>";
+		};
+		115036B71FD3EAED00A33761 /* 锚点 */ = {
+			isa = PBXGroup;
+			children = (
+				115036B21FD3B40900A33761 /* 观察frame */,
+				115036AD1FD3B32B00A33761 /* 闹钟 */,
+			);
+			name = "锚点";
+			sourceTree = "<group>";
+		};
+		115036B81FD3EB4200A33761 /* 坐标系转化 */ = {
 			isa = PBXGroup;
 			children = (
 				115036AF1FD3B3A400A33761 /* ConvertPointController.h */,
@@ -251,13 +297,31 @@
 			name = "坐标系转化";
 			sourceTree = "<group>";
 		};
-		115036B21FD3B40900A33761 /* 锚点-观察frame */ = {
+		115036B91FD3EB5900A33761 /* Z坐标轴 */ = {
 			isa = PBXGroup;
 			children = (
-				115036B31FD3B46800A33761 /* ChangeAnchorPointController.h */,
-				115036B41FD3B46800A33761 /* ChangeAnchorPointController.m */,
+				115036BA1FD3EBA200A33761 /* ZPositionController.h */,
+				115036BB1FD3EBA200A33761 /* ZPositionController.m */,
+				115036BC1FD3EBA200A33761 /* ZPositionController.xib */,
 			);
-			name = "锚点-观察frame";
+			name = "Z坐标轴";
+			sourceTree = "<group>";
+		};
+		115036C41FD401D600A33761 /* 判断点的位置 */ = {
+			isa = PBXGroup;
+			children = (
+				115036BF1FD3F32200A33761 /* HitTestingController.h */,
+				115036C01FD3F32200A33761 /* HitTestingController.m */,
+				115036C11FD3F32200A33761 /* HitTestingController.xib */,
+			);
+			name = "判断点的位置";
+			sourceTree = "<group>";
+		};
+		115036C51FD401F500A33761 /* 扩大按钮的响应区域 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "扩大按钮的响应区域";
 			sourceTree = "<group>";
 		};
 		115AE2E61F938CF800989785 = {
@@ -433,7 +497,9 @@
 			files = (
 				115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */,
 				115AE2FF1F938CF800989785 /* Assets.xcassets in Resources */,
+				115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */,
 				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
+				115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */,
 				115AE2FD1F938CF800989785 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,9 +528,11 @@
 				115AE2FA1F938CF800989785 /* ViewController.m in Sources */,
 				115AE2F71F938CF800989785 /* AppDelegate.m in Sources */,
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
+				115036BD1FD3EBA200A33761 /* ZPositionController.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
+				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
 				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
