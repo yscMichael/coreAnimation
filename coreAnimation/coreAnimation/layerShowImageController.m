@@ -23,16 +23,16 @@
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    UIImage *image = [UIImage imageNamed:@"0.jpeg"];
+    UIImage *image = [UIImage imageNamed:@"2.jpeg"];
 
-    //直接设置图片，图片虚胖
+    //1、直接设置图片、图片虚胖、图片填充
     UIView *firstView = [[UIView alloc]initWithFrame:CGRectMake(0, 64, ScreenWidth / 2, ScreenWidth / 2)];
     firstView.backgroundColor = [UIColor brownColor];
     [self.view addSubview:firstView];
     firstView.layer.contents = (__bridge id _Nullable)(image.CGImage);
 
-    //解决虚胖问题、相当于是把图片同比例缩放
-    UIView *secondView = [[UIView alloc]initWithFrame:CGRectMake(ScreenWidth / 2, 64, ScreenWidth / 2, ScreenWidth / 2)];
+    //2、解决虚胖问题、按照当前View宽高比例，把图片同比例缩放
+    UIView *secondView = [[UIView alloc]initWithFrame:CGRectMake(ScreenWidth / 2, 270, ScreenWidth / 2, ScreenWidth / 2)];
     secondView.backgroundColor = [UIColor brownColor];
     [self.view addSubview:secondView];
     secondView.layer.contents = (__bridge id _Nullable)(image.CGImage);
@@ -40,7 +40,7 @@
     //secondView.contentMode = UIViewContentModeScaleAspectFit;
     secondView.layer.contentsGravity = kCAGravityResizeAspect;
 
-    //图片会以原图显示
+    //3、图片会以原图显示
     UIView *threeView = [[UIView alloc]initWithFrame:CGRectMake(0, ScreenHeight - ScreenWidth / 2, ScreenWidth / 2, ScreenWidth / 2)];
     threeView.backgroundColor = [UIColor brownColor];
     [self.view addSubview:threeView];

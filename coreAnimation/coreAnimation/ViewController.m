@@ -18,6 +18,7 @@
 @property (nonatomic,strong) UITableView *tableView;
 
 @property (nonatomic,strong) NSMutableArray *dataSoure;
+@property (nonatomic,strong) NSMutableArray *sectionSource;
 @property (nonatomic,strong) NSMutableArray *controllerSoure;
 
 @end
@@ -36,21 +37,37 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Class viewControl = NSClassFromString(self.controllerSoure[indexPath.row]);
+    NSArray *sectionArray = self.controllerSoure[indexPath.section];
+    Class viewControl = NSClassFromString(sectionArray[indexPath.row]);
     UIViewController *viewcontroller = [[viewControl alloc]init];
     [self.navigationController pushViewController:viewcontroller animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger) section
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.dataSoure.count;
+    return self.sectionSource.count;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger) section
+{
+    NSArray *sectionArray = self.dataSoure[section];
+    return sectionArray.count;
+}
+
+//设置每组的标题头
+- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return self.sectionSource[section];
+}
+
+//设置每个cell的内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.textLabel.text = self.dataSoure[indexPath.row];
+
+    NSArray *sectionArray = self.dataSoure[indexPath.section];
+    cell.textLabel.text = sectionArray[indexPath.row];
 
     return cell;
 }
@@ -67,11 +84,32 @@
     return _tableView;
 }
 
+- (NSMutableArray *)sectionSource
+{
+    if (!_sectionSource)
+    {
+        _sectionSource = [[NSMutableArray alloc]initWithObjects:
+                          @"图层树",
+                          @"寄宿图",
+                          @"动画制作方式",
+                          @"动画和layer属性关系", nil];
+    }
+    return _sectionSource;
+}
+
 - (NSMutableArray *)dataSoure
 {
     if (!_dataSoure)
     {
-        _dataSoure = [[NSMutableArray alloc]initWithObjects:@"图层树",@"寄宿图-layer显示图片",@"寄宿图-layer分割图片",@"寄宿图-layer拉伸图片",@"寄宿图-layer重绘",@"UIView创建动画的三种方式",@"更改透明度－隐式动画", nil];
+
+        _dataSoure = [[NSMutableArray alloc]initWithObjects:
+                      @[@"添加图层"],
+                      @[@"layer显示图片",
+                        @"layer分割图片",
+                        @"layer拉伸图片",
+                        @"layer重绘"],
+                      @[@"UIView制作动画的三种方式"],
+                      @[@"UIView更改透明度"], nil];
     }
     return _dataSoure;
 }
@@ -80,7 +118,14 @@
 {
     if (!_controllerSoure)
     {
-        _controllerSoure = [[NSMutableArray alloc]initWithObjects:@"LayerCreateController",@"layerShowImageController",@"SplitImageController",@"stretchViewController",@"redrawViewController",@"threeMethodsController",@"changeOpacityController", nil];
+        _controllerSoure = [[NSMutableArray alloc]initWithObjects:
+                            @[@"LayerCreateController"],
+                            @[@"layerShowImageController",
+                              @"SplitImageController",
+                              @"stretchViewController",
+                              @"redrawViewController"],
+                            @[@"threeMethodsController"],
+                            @[@"changeOpacityController"],nil];
     }
     return _controllerSoure;
 }
