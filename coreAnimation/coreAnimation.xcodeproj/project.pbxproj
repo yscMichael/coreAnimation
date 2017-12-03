@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369B1FD3A0DB00A33761 /* stretchViewController.m */; };
 		1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369E1FD3A10300A33761 /* redrawViewController.m */; };
+		115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036A91FD3AED800A33761 /* AlarmClockController.m */; };
+		115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115036AA1FD3AED800A33761 /* AlarmClockController.xib */; };
+		115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036B01FD3B3A400A33761 /* ConvertPointController.m */; };
+		115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036B41FD3B46800A33761 /* ChangeAnchorPointController.m */; };
 		115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175541FAECBC20076F7F6 /* threeMethodsController.m */; };
 		115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115175571FAED8AD0076F7F6 /* changeOpacityController.m */; };
 		1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1151755A1FAEECE70076F7F6 /* LayerCreateController.m */; };
@@ -46,6 +50,13 @@
 		1150369B1FD3A0DB00A33761 /* stretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stretchViewController.m; path = coreAnimation/stretchViewController.m; sourceTree = "<group>"; };
 		1150369D1FD3A10300A33761 /* redrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = redrawViewController.h; path = coreAnimation/redrawViewController.h; sourceTree = "<group>"; };
 		1150369E1FD3A10300A33761 /* redrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = redrawViewController.m; path = coreAnimation/redrawViewController.m; sourceTree = "<group>"; };
+		115036A81FD3AED800A33761 /* AlarmClockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmClockController.h; sourceTree = "<group>"; };
+		115036A91FD3AED800A33761 /* AlarmClockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmClockController.m; sourceTree = "<group>"; };
+		115036AA1FD3AED800A33761 /* AlarmClockController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmClockController.xib; sourceTree = "<group>"; };
+		115036AF1FD3B3A400A33761 /* ConvertPointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertPointController.h; sourceTree = "<group>"; };
+		115036B01FD3B3A400A33761 /* ConvertPointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertPointController.m; sourceTree = "<group>"; };
+		115036B31FD3B46800A33761 /* ChangeAnchorPointController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeAnchorPointController.h; sourceTree = "<group>"; };
+		115036B41FD3B46800A33761 /* ChangeAnchorPointController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeAnchorPointController.m; sourceTree = "<group>"; };
 		115175531FAECBC20076F7F6 /* threeMethodsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = threeMethodsController.h; path = coreAnimation/threeMethodsController.h; sourceTree = "<group>"; };
 		115175541FAECBC20076F7F6 /* threeMethodsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = threeMethodsController.m; path = coreAnimation/threeMethodsController.m; sourceTree = "<group>"; };
 		115175561FAED8AD0076F7F6 /* changeOpacityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = changeOpacityController.h; path = coreAnimation/changeOpacityController.h; sourceTree = "<group>"; };
@@ -140,6 +151,9 @@
 		1148BDF01FCAF6E00021375B /* 图层几何学 */ = {
 			isa = PBXGroup;
 			children = (
+				115036B21FD3B40900A33761 /* 锚点-观察frame */,
+				115036AD1FD3B32B00A33761 /* 锚点-闹钟 */,
+				115036AE1FD3B36200A33761 /* 坐标系转化 */,
 			);
 			name = "图层几何学";
 			sourceTree = "<group>";
@@ -216,6 +230,34 @@
 			);
 			name = "动画制作方式";
 			path = ..;
+			sourceTree = "<group>";
+		};
+		115036AD1FD3B32B00A33761 /* 锚点-闹钟 */ = {
+			isa = PBXGroup;
+			children = (
+				115036A81FD3AED800A33761 /* AlarmClockController.h */,
+				115036A91FD3AED800A33761 /* AlarmClockController.m */,
+				115036AA1FD3AED800A33761 /* AlarmClockController.xib */,
+			);
+			name = "锚点-闹钟";
+			sourceTree = "<group>";
+		};
+		115036AE1FD3B36200A33761 /* 坐标系转化 */ = {
+			isa = PBXGroup;
+			children = (
+				115036AF1FD3B3A400A33761 /* ConvertPointController.h */,
+				115036B01FD3B3A400A33761 /* ConvertPointController.m */,
+			);
+			name = "坐标系转化";
+			sourceTree = "<group>";
+		};
+		115036B21FD3B40900A33761 /* 锚点-观察frame */ = {
+			isa = PBXGroup;
+			children = (
+				115036B31FD3B46800A33761 /* ChangeAnchorPointController.h */,
+				115036B41FD3B46800A33761 /* ChangeAnchorPointController.m */,
+			);
+			name = "锚点-观察frame";
 			sourceTree = "<group>";
 		};
 		115AE2E61F938CF800989785 = {
@@ -391,6 +433,7 @@
 			files = (
 				115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */,
 				115AE2FF1F938CF800989785 /* Assets.xcassets in Resources */,
+				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
 				115AE2FD1F938CF800989785 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,9 +465,12 @@
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
+				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
+				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
+				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

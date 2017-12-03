@@ -91,6 +91,7 @@
         _sectionSource = [[NSMutableArray alloc]initWithObjects:
                           @"图层树",
                           @"寄宿图",
+                          @"图层几何学",
                           @"动画制作方式",
                           @"动画和layer属性关系", nil];
     }
@@ -108,6 +109,7 @@
                         @"layer分割图片",
                         @"layer拉伸图片",
                         @"layer重绘"],
+                      @[@"锚点-观察frame",@"锚点-闹钟",@"坐标系转化"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -124,6 +126,9 @@
                               @"SplitImageController",
                               @"stretchViewController",
                               @"redrawViewController"],
+                            @[@"ChangeAnchorPointController",
+                              @"AlarmClockController",
+                              @"ConvertPointController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
