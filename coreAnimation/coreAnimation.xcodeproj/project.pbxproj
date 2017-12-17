@@ -33,6 +33,9 @@
 		117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */; };
 		117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9041FE61501003F2ADA /* UIButton+ExpandArea.m */; };
 		117FF9081FE61522003F2ADA /* HWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9071FE61522003F2ADA /* HWButton.m */; };
+		117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF90B1FE61E95003F2ADA /* beyondRangeController.m */; };
+		117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF90E1FE61F17003F2ADA /* HitTestView.m */; };
+		117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9101FE61F40003F2ADA /* beyondRangeController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,11 @@
 		117FF9041FE61501003F2ADA /* UIButton+ExpandArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ExpandArea.m"; sourceTree = "<group>"; };
 		117FF9061FE61522003F2ADA /* HWButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWButton.h; sourceTree = "<group>"; };
 		117FF9071FE61522003F2ADA /* HWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWButton.m; sourceTree = "<group>"; };
+		117FF90A1FE61E95003F2ADA /* beyondRangeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = beyondRangeController.h; sourceTree = "<group>"; };
+		117FF90B1FE61E95003F2ADA /* beyondRangeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = beyondRangeController.m; sourceTree = "<group>"; };
+		117FF90D1FE61F17003F2ADA /* HitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestView.h; sourceTree = "<group>"; };
+		117FF90E1FE61F17003F2ADA /* HitTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestView.m; sourceTree = "<group>"; };
+		117FF9101FE61F40003F2ADA /* beyondRangeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = beyondRangeController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +416,11 @@
 		117FF9091FE61DE8003F2ADA /* 子类超出父类范围 */ = {
 			isa = PBXGroup;
 			children = (
+				117FF90D1FE61F17003F2ADA /* HitTestView.h */,
+				117FF90E1FE61F17003F2ADA /* HitTestView.m */,
+				117FF90A1FE61E95003F2ADA /* beyondRangeController.h */,
+				117FF90B1FE61E95003F2ADA /* beyondRangeController.m */,
+				117FF9101FE61F40003F2ADA /* beyondRangeController.xib */,
 			);
 			name = "子类超出父类范围";
 			sourceTree = "<group>";
@@ -522,6 +535,7 @@
 				115AE2FF1F938CF800989785 /* Assets.xcassets in Resources */,
 				115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */,
 				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
+				117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */,
 				115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */,
 				115AE2FD1F938CF800989785 /* Main.storyboard in Resources */,
 			);
@@ -556,6 +570,7 @@
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
+				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
@@ -564,6 +579,7 @@
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
+				117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */,
 				117FF9081FE61522003F2ADA /* HWButton.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
 			);

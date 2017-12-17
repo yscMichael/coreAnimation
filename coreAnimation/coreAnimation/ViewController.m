@@ -114,7 +114,8 @@
                         @"坐标系转化",
                         @"Z坐标轴",
                         @"Hit Testing",
-                        @"扩大按钮的点击范围"],
+                        @"扩大按钮的点击范围",
+                        @"子类超出父类范围"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -136,7 +137,8 @@
                               @"ConvertPointController",
                               @"ZPositionController",
                               @"HitTestingController",
-                              @"expandButtonAreaController"],
+                              @"expandButtonAreaController",
+                              @"beyondRangeController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
