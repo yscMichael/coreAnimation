@@ -39,6 +39,8 @@
 		117FF91D1FE6310C003F2ADA /* HitScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF91C1FE6310C003F2ADA /* HitScrollView.m */; };
 		117FF9211FE63130003F2ADA /* scrollViewPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF91F1FE63130003F2ADA /* scrollViewPreviewController.m */; };
 		117FF9241FE63291003F2ADA /* scrollViewPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9231FE63291003F2ADA /* scrollViewPreviewController.xib */; };
+		117FF9291FE638DE003F2ADA /* AutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9271FE638DE003F2ADA /* AutoLayoutController.m */; };
+		117FF92A1FE638DE003F2ADA /* AutoLayoutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9281FE638DE003F2ADA /* AutoLayoutController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,9 @@
 		117FF91E1FE63130003F2ADA /* scrollViewPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollViewPreviewController.h; sourceTree = "<group>"; };
 		117FF91F1FE63130003F2ADA /* scrollViewPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrollViewPreviewController.m; sourceTree = "<group>"; };
 		117FF9231FE63291003F2ADA /* scrollViewPreviewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scrollViewPreviewController.xib; sourceTree = "<group>"; };
+		117FF9261FE638DE003F2ADA /* AutoLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutController.h; sourceTree = "<group>"; };
+		117FF9271FE638DE003F2ADA /* AutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutController.m; sourceTree = "<group>"; };
+		117FF9281FE638DE003F2ADA /* AutoLayoutController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +194,7 @@
 				115036B71FD3EAED00A33761 /* 锚点 */,
 				115036AE1FD3B36200A33761 /* 坐标系 */,
 				115036B61FD3EA8C00A33761 /* HitTesting */,
+				117FF9251FE638B9003F2ADA /* 自动布局 */,
 			);
 			name = "图层几何学";
 			sourceTree = "<group>";
@@ -385,6 +391,7 @@
 				1148BDE41FCAA0D40021375B /* 图层树 */,
 				1148BDE61FCAA1530021375B /* 寄宿图 */,
 				1148BDF01FCAF6E00021375B /* 图层几何学 */,
+				117FF92B1FE63CBC003F2ADA /* 视觉效果 */,
 				115036A71FD3AC8B00A33761 /* 动画制作方式 */,
 				115036A61FD3AC8500A33761 /* 动画和layer属性关系 */,
 				115AE2FB1F938CF800989785 /* Main.storyboard */,
@@ -444,6 +451,23 @@
 				117FF9231FE63291003F2ADA /* scrollViewPreviewController.xib */,
 			);
 			name = "scrollView预览页面";
+			sourceTree = "<group>";
+		};
+		117FF9251FE638B9003F2ADA /* 自动布局 */ = {
+			isa = PBXGroup;
+			children = (
+				117FF9261FE638DE003F2ADA /* AutoLayoutController.h */,
+				117FF9271FE638DE003F2ADA /* AutoLayoutController.m */,
+				117FF9281FE638DE003F2ADA /* AutoLayoutController.xib */,
+			);
+			name = "自动布局";
+			sourceTree = "<group>";
+		};
+		117FF92B1FE63CBC003F2ADA /* 视觉效果 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "视觉效果";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +583,7 @@
 				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
 				117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */,
 				115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */,
+				117FF92A1FE638DE003F2ADA /* AutoLayoutController.xib in Resources */,
 				115AE2FD1F938CF800989785 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -589,6 +614,7 @@
 				115AE2F71F938CF800989785 /* AppDelegate.m in Sources */,
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
 				115036BD1FD3EBA200A33761 /* ZPositionController.m in Sources */,
+				117FF9291FE638DE003F2ADA /* AutoLayoutController.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
