@@ -49,6 +49,8 @@
 		117FF93D1FE65435003F2ADA /* shadowTailoringController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF93B1FE65435003F2ADA /* shadowTailoringController.xib */; };
 		117FF9421FE658F9003F2ADA /* shadowPathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9401FE658F9003F2ADA /* shadowPathController.m */; };
 		117FF9431FE658F9003F2ADA /* shadowPathController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9411FE658F9003F2ADA /* shadowPathController.xib */; };
+		117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9461FE6663F003F2ADA /* MaskViewController.m */; };
+		117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9471FE6663F003F2ADA /* MaskViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,9 @@
 		117FF93F1FE658F9003F2ADA /* shadowPathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shadowPathController.h; sourceTree = "<group>"; };
 		117FF9401FE658F9003F2ADA /* shadowPathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shadowPathController.m; sourceTree = "<group>"; };
 		117FF9411FE658F9003F2ADA /* shadowPathController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shadowPathController.xib; sourceTree = "<group>"; };
+		117FF9451FE6663F003F2ADA /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
+		117FF9461FE6663F003F2ADA /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
+		117FF9471FE6663F003F2ADA /* MaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -490,6 +495,7 @@
 				117FF9321FE64E55003F2ADA /* 阴影 */,
 				117FF9381FE653AD003F2ADA /* 阴影剪裁 */,
 				117FF93E1FE658CE003F2ADA /* 阴影按照形状剪裁 */,
+				117FF9441FE65EAA003F2ADA /* 图层蒙版 */,
 			);
 			name = "视觉效果";
 			sourceTree = "<group>";
@@ -532,6 +538,16 @@
 				117FF9411FE658F9003F2ADA /* shadowPathController.xib */,
 			);
 			name = "阴影按照形状剪裁";
+			sourceTree = "<group>";
+		};
+		117FF9441FE65EAA003F2ADA /* 图层蒙版 */ = {
+			isa = PBXGroup;
+			children = (
+				117FF9451FE6663F003F2ADA /* MaskViewController.h */,
+				117FF9461FE6663F003F2ADA /* MaskViewController.m */,
+				117FF9471FE6663F003F2ADA /* MaskViewController.xib */,
+			);
+			name = "图层蒙版";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -650,6 +666,7 @@
 				117FF9371FE64EAA003F2ADA /* shadowController.xib in Resources */,
 				117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */,
 				115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */,
+				117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */,
 				117FF93D1FE65435003F2ADA /* shadowTailoringController.xib in Resources */,
 				117FF92A1FE638DE003F2ADA /* AutoLayoutController.xib in Resources */,
 				115AE2FD1F938CF800989785 /* Main.storyboard in Resources */,
@@ -687,6 +704,7 @@
 				117FF9291FE638DE003F2ADA /* AutoLayoutController.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
+				117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
 				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,

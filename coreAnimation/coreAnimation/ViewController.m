@@ -122,7 +122,8 @@
                       @[@"圆角和图层边框",
                         @"阴影",
                         @"阴影剪裁",
-                        @"阴影按照形状剪裁"],
+                        @"阴影按照形状剪裁",
+                        @"图层蒙版"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -151,7 +152,8 @@
                             @[@"cornerViewController",
                               @"shadowController",
                               @"shadowTailoringController",
-                              @"shadowPathController"],
+                              @"shadowPathController",
+                              @"MaskViewController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaskViewController">
+            <connections>
+                <outlet property="imageView" destination="rc4-tJ-aZZ" id="l3F-ru-ahT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Igloo" translatesAutoresizingMaskIntoConstraints="NO" id="rc4-tJ-aZZ">
+                    <rect key="frame" x="80" y="230.5" width="215" height="206"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="206" id="86m-b2-rkT"/>
+                        <constraint firstAttribute="width" constant="215" id="atQ-ur-XSl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="rc4-tJ-aZZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ojY-kV-nqr"/>
+                <constraint firstItem="rc4-tJ-aZZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rLa-Z7-d0w"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="102.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Igloo" width="256" height="256"/>
+    </resources>
+</document>
