@@ -92,6 +92,7 @@
                           @"图层树",
                           @"寄宿图",
                           @"图层几何学",
+                          @"视觉效果",
                           @"动画制作方式",
                           @"动画和layer属性关系", nil];
     }
@@ -118,6 +119,9 @@
                         @"子类超出父类范围",
                         @"scrollView预览界面",
                         @"自动布局Xib"],
+                      @[@"圆角和图层边框",
+                        @"阴影",
+                        @"阴影剪裁"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -143,6 +147,9 @@
                               @"beyondRangeController",
                               @"scrollViewPreviewController",
                               @"AutoLayoutController"],
+                            @[@"cornerViewController",
+                              @"shadowController",
+                              @"shadowTailoringController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

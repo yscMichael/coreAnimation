@@ -41,6 +41,12 @@
 		117FF9241FE63291003F2ADA /* scrollViewPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9231FE63291003F2ADA /* scrollViewPreviewController.xib */; };
 		117FF9291FE638DE003F2ADA /* AutoLayoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9271FE638DE003F2ADA /* AutoLayoutController.m */; };
 		117FF92A1FE638DE003F2ADA /* AutoLayoutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9281FE638DE003F2ADA /* AutoLayoutController.xib */; };
+		117FF92F1FE64BF5003F2ADA /* cornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF92D1FE64BF5003F2ADA /* cornerViewController.m */; };
+		117FF9301FE64BF5003F2ADA /* cornerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF92E1FE64BF5003F2ADA /* cornerViewController.xib */; };
+		117FF9361FE64EAA003F2ADA /* shadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9341FE64EAA003F2ADA /* shadowController.m */; };
+		117FF9371FE64EAA003F2ADA /* shadowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9351FE64EAA003F2ADA /* shadowController.xib */; };
+		117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF93A1FE65435003F2ADA /* shadowTailoringController.m */; };
+		117FF93D1FE65435003F2ADA /* shadowTailoringController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF93B1FE65435003F2ADA /* shadowTailoringController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +129,15 @@
 		117FF9261FE638DE003F2ADA /* AutoLayoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutController.h; sourceTree = "<group>"; };
 		117FF9271FE638DE003F2ADA /* AutoLayoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutController.m; sourceTree = "<group>"; };
 		117FF9281FE638DE003F2ADA /* AutoLayoutController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutController.xib; sourceTree = "<group>"; };
+		117FF92C1FE64BF5003F2ADA /* cornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cornerViewController.h; sourceTree = "<group>"; };
+		117FF92D1FE64BF5003F2ADA /* cornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cornerViewController.m; sourceTree = "<group>"; };
+		117FF92E1FE64BF5003F2ADA /* cornerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cornerViewController.xib; sourceTree = "<group>"; };
+		117FF9331FE64EAA003F2ADA /* shadowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shadowController.h; sourceTree = "<group>"; };
+		117FF9341FE64EAA003F2ADA /* shadowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shadowController.m; sourceTree = "<group>"; };
+		117FF9351FE64EAA003F2ADA /* shadowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shadowController.xib; sourceTree = "<group>"; };
+		117FF9391FE65435003F2ADA /* shadowTailoringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shadowTailoringController.h; sourceTree = "<group>"; };
+		117FF93A1FE65435003F2ADA /* shadowTailoringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shadowTailoringController.m; sourceTree = "<group>"; };
+		117FF93B1FE65435003F2ADA /* shadowTailoringController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shadowTailoringController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,8 +481,41 @@
 		117FF92B1FE63CBC003F2ADA /* 视觉效果 */ = {
 			isa = PBXGroup;
 			children = (
+				117FF9311FE64E44003F2ADA /* 圆角和图层边框 */,
+				117FF9321FE64E55003F2ADA /* 阴影 */,
+				117FF9381FE653AD003F2ADA /* 阴影剪裁 */,
 			);
 			name = "视觉效果";
+			sourceTree = "<group>";
+		};
+		117FF9311FE64E44003F2ADA /* 圆角和图层边框 */ = {
+			isa = PBXGroup;
+			children = (
+				117FF92C1FE64BF5003F2ADA /* cornerViewController.h */,
+				117FF92D1FE64BF5003F2ADA /* cornerViewController.m */,
+				117FF92E1FE64BF5003F2ADA /* cornerViewController.xib */,
+			);
+			name = "圆角和图层边框";
+			sourceTree = "<group>";
+		};
+		117FF9321FE64E55003F2ADA /* 阴影 */ = {
+			isa = PBXGroup;
+			children = (
+				117FF9331FE64EAA003F2ADA /* shadowController.h */,
+				117FF9341FE64EAA003F2ADA /* shadowController.m */,
+				117FF9351FE64EAA003F2ADA /* shadowController.xib */,
+			);
+			name = "阴影";
+			sourceTree = "<group>";
+		};
+		117FF9381FE653AD003F2ADA /* 阴影剪裁 */ = {
+			isa = PBXGroup;
+			children = (
+				117FF9391FE65435003F2ADA /* shadowTailoringController.h */,
+				117FF93A1FE65435003F2ADA /* shadowTailoringController.m */,
+				117FF93B1FE65435003F2ADA /* shadowTailoringController.xib */,
+			);
+			name = "阴影剪裁";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -579,10 +627,13 @@
 				117FF9241FE63291003F2ADA /* scrollViewPreviewController.xib in Resources */,
 				115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */,
 				115AE2FF1F938CF800989785 /* Assets.xcassets in Resources */,
+				117FF9301FE64BF5003F2ADA /* cornerViewController.xib in Resources */,
 				115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */,
 				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
+				117FF9371FE64EAA003F2ADA /* shadowController.xib in Resources */,
 				117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */,
 				115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */,
+				117FF93D1FE65435003F2ADA /* shadowTailoringController.xib in Resources */,
 				117FF92A1FE638DE003F2ADA /* AutoLayoutController.xib in Resources */,
 				115AE2FD1F938CF800989785 /* Main.storyboard in Resources */,
 			);
@@ -610,6 +661,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */,
+				117FF92F1FE64BF5003F2ADA /* cornerViewController.m in Sources */,
 				115AE2FA1F938CF800989785 /* ViewController.m in Sources */,
 				115AE2F71F938CF800989785 /* AppDelegate.m in Sources */,
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
@@ -619,10 +671,12 @@
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
 				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
+				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
+				117FF9361FE64EAA003F2ADA /* shadowController.m in Sources */,
 				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
 				117FF91D1FE6310C003F2ADA /* HitScrollView.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
