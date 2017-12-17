@@ -121,7 +121,8 @@
                         @"自动布局Xib"],
                       @[@"圆角和图层边框",
                         @"阴影",
-                        @"阴影剪裁"],
+                        @"阴影剪裁",
+                        @"阴影按照形状剪裁"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -149,7 +150,8 @@
                               @"AutoLayoutController"],
                             @[@"cornerViewController",
                               @"shadowController",
-                              @"shadowTailoringController"],
+                              @"shadowTailoringController",
+                              @"shadowPathController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
