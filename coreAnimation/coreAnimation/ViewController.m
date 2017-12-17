@@ -109,7 +109,12 @@
                         @"layer分割图片",
                         @"layer拉伸图片",
                         @"layer重绘"],
-                      @[@"锚点-观察frame",@"锚点-闹钟",@"坐标系转化",@"Z坐标轴",@"Hit Testing"],
+                      @[@"锚点-观察frame",
+                        @"锚点-闹钟",
+                        @"坐标系转化",
+                        @"Z坐标轴",
+                        @"Hit Testing",
+                        @"扩大按钮的点击范围"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -130,7 +135,8 @@
                               @"AlarmClockController",
                               @"ConvertPointController",
                               @"ZPositionController",
-                              @"HitTestingController"],
+                              @"HitTestingController",
+                              @"expandButtonAreaController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

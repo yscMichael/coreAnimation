@@ -30,6 +30,9 @@
 		115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115AE3001F938CF800989785 /* LaunchScreen.storyboard */; };
 		115AE30D1F938CF800989785 /* coreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE30C1F938CF800989785 /* coreAnimationTests.m */; };
 		115AE3181F938CF800989785 /* coreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE3171F938CF800989785 /* coreAnimationUITests.m */; };
+		117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */; };
+		117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9041FE61501003F2ADA /* UIButton+ExpandArea.m */; };
+		117FF9081FE61522003F2ADA /* HWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9071FE61522003F2ADA /* HWButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,12 @@
 		115AE3131F938CF800989785 /* coreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115AE3171F938CF800989785 /* coreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreAnimationUITests.m; sourceTree = "<group>"; };
 		115AE3191F938CF800989785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		117FF8FD1FE6149E003F2ADA /* expandButtonAreaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expandButtonAreaController.h; sourceTree = "<group>"; };
+		117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = expandButtonAreaController.m; sourceTree = "<group>"; };
+		117FF9031FE61501003F2ADA /* UIButton+ExpandArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ExpandArea.h"; sourceTree = "<group>"; };
+		117FF9041FE61501003F2ADA /* UIButton+ExpandArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ExpandArea.m"; sourceTree = "<group>"; };
+		117FF9061FE61522003F2ADA /* HWButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWButton.h; sourceTree = "<group>"; };
+		117FF9071FE61522003F2ADA /* HWButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +172,7 @@
 			children = (
 				115036B71FD3EAED00A33761 /* 锚点 */,
 				115036AE1FD3B36200A33761 /* 坐标系 */,
+				115036B61FD3EA8C00A33761 /* HitTesting */,
 			);
 			name = "图层几何学";
 			sourceTree = "<group>";
@@ -256,7 +266,6 @@
 			children = (
 				115036B81FD3EB4200A33761 /* 坐标系转化 */,
 				115036B91FD3EB5900A33761 /* Z坐标轴 */,
-				115036B61FD3EA8C00A33761 /* HitTesting */,
 			);
 			name = "坐标系";
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 			children = (
 				115036C41FD401D600A33761 /* 判断点的位置 */,
 				115036C51FD401F500A33761 /* 扩大按钮的响应区域 */,
+				117FF9091FE61DE8003F2ADA /* 子类超出父类范围 */,
 			);
 			name = HitTesting;
 			sourceTree = "<group>";
@@ -320,6 +330,12 @@
 		115036C51FD401F500A33761 /* 扩大按钮的响应区域 */ = {
 			isa = PBXGroup;
 			children = (
+				117FF9061FE61522003F2ADA /* HWButton.h */,
+				117FF9071FE61522003F2ADA /* HWButton.m */,
+				117FF9031FE61501003F2ADA /* UIButton+ExpandArea.h */,
+				117FF9041FE61501003F2ADA /* UIButton+ExpandArea.m */,
+				117FF8FD1FE6149E003F2ADA /* expandButtonAreaController.h */,
+				117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */,
 			);
 			name = "扩大按钮的响应区域";
 			sourceTree = "<group>";
@@ -387,6 +403,13 @@
 				115AE3191F938CF800989785 /* Info.plist */,
 			);
 			path = coreAnimationUITests;
+			sourceTree = "<group>";
+		};
+		117FF9091FE61DE8003F2ADA /* 子类超出父类范围 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "子类超出父类范围";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */,
 				115AE2FA1F938CF800989785 /* ViewController.m in Sources */,
 				115AE2F71F938CF800989785 /* AppDelegate.m in Sources */,
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
@@ -532,6 +556,7 @@
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
+				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
@@ -539,6 +564,7 @@
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
+				117FF9081FE61522003F2ADA /* HWButton.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
