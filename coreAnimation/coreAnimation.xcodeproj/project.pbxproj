@@ -36,6 +36,9 @@
 		117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF90B1FE61E95003F2ADA /* beyondRangeController.m */; };
 		117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF90E1FE61F17003F2ADA /* HitTestView.m */; };
 		117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9101FE61F40003F2ADA /* beyondRangeController.xib */; };
+		117FF91D1FE6310C003F2ADA /* HitScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF91C1FE6310C003F2ADA /* HitScrollView.m */; };
+		117FF9211FE63130003F2ADA /* scrollViewPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF91F1FE63130003F2ADA /* scrollViewPreviewController.m */; };
+		117FF9241FE63291003F2ADA /* scrollViewPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9231FE63291003F2ADA /* scrollViewPreviewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,11 @@
 		117FF90D1FE61F17003F2ADA /* HitTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitTestView.h; sourceTree = "<group>"; };
 		117FF90E1FE61F17003F2ADA /* HitTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitTestView.m; sourceTree = "<group>"; };
 		117FF9101FE61F40003F2ADA /* beyondRangeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = beyondRangeController.xib; sourceTree = "<group>"; };
+		117FF91B1FE6310C003F2ADA /* HitScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitScrollView.h; sourceTree = "<group>"; };
+		117FF91C1FE6310C003F2ADA /* HitScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitScrollView.m; sourceTree = "<group>"; };
+		117FF91E1FE63130003F2ADA /* scrollViewPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrollViewPreviewController.h; sourceTree = "<group>"; };
+		117FF91F1FE63130003F2ADA /* scrollViewPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scrollViewPreviewController.m; sourceTree = "<group>"; };
+		117FF9231FE63291003F2ADA /* scrollViewPreviewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = scrollViewPreviewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +301,7 @@
 				115036C41FD401D600A33761 /* 判断点的位置 */,
 				115036C51FD401F500A33761 /* 扩大按钮的响应区域 */,
 				117FF9091FE61DE8003F2ADA /* 子类超出父类范围 */,
+				117FF9121FE62150003F2ADA /* scrollView预览页面 */,
 			);
 			name = HitTesting;
 			sourceTree = "<group>";
@@ -425,6 +434,18 @@
 			name = "子类超出父类范围";
 			sourceTree = "<group>";
 		};
+		117FF9121FE62150003F2ADA /* scrollView预览页面 */ = {
+			isa = PBXGroup;
+			children = (
+				117FF91B1FE6310C003F2ADA /* HitScrollView.h */,
+				117FF91C1FE6310C003F2ADA /* HitScrollView.m */,
+				117FF91E1FE63130003F2ADA /* scrollViewPreviewController.h */,
+				117FF91F1FE63130003F2ADA /* scrollViewPreviewController.m */,
+				117FF9231FE63291003F2ADA /* scrollViewPreviewController.xib */,
+			);
+			name = "scrollView预览页面";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -531,6 +552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117FF9241FE63291003F2ADA /* scrollViewPreviewController.xib in Resources */,
 				115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */,
 				115AE2FF1F938CF800989785 /* Assets.xcassets in Resources */,
 				115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */,
@@ -576,11 +598,13 @@
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
 				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
+				117FF91D1FE6310C003F2ADA /* HitScrollView.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
 				117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */,
 				117FF9081FE61522003F2ADA /* HWButton.m in Sources */,
+				117FF9211FE63130003F2ADA /* scrollViewPreviewController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

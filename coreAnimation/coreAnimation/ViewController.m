@@ -38,6 +38,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *sectionArray = self.controllerSoure[indexPath.section];
+    NSLog(@"ssss = %@",sectionArray[indexPath.row]);
     Class viewControl = NSClassFromString(sectionArray[indexPath.row]);
     UIViewController *viewcontroller = [[viewControl alloc]init];
     [self.navigationController pushViewController:viewcontroller animated:YES];
@@ -115,7 +116,8 @@
                         @"Z坐标轴",
                         @"Hit Testing",
                         @"扩大按钮的点击范围",
-                        @"子类超出父类范围"],
+                        @"子类超出父类范围",
+                        @"scrollView预览界面"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -138,7 +140,8 @@
                               @"ZPositionController",
                               @"HitTestingController",
                               @"expandButtonAreaController",
-                              @"beyondRangeController"],
+                              @"beyondRangeController",
+                              @"scrollViewPreviewController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
