@@ -126,7 +126,8 @@
                         @"基本图层蒙版",
                         @"蒙版动态显示",
                         @"动态移动控件的两种方法",
-                        @"蒙版动态显示增强"],
+                        @"蒙版动态显示增强",
+                        @"拉伸过滤"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -159,7 +160,8 @@
                               @"MaskViewController",
                               @"DynamicMaskController",
                               @"TwoMethodsMoveViewController",
-                              @"DynamicMaskImprovedController"],
+                              @"DynamicMaskImprovedController",
+                              @"FilterViewController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

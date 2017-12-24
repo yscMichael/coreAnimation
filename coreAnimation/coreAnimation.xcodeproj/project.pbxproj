@@ -54,6 +54,8 @@
 		11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */; };
 		11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */; };
 		11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */; };
+		11F9C8CE1FEF96600052515C /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8CC1FEF96600052515C /* FilterViewController.m */; };
+		11F9C8CF1FEF96600052515C /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F9C8CD1FEF96600052515C /* FilterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +159,9 @@
 		11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoMethodsMoveViewController.m; sourceTree = "<group>"; };
 		11F9C8C71FEF87B80052515C /* DynamicMaskImprovedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskImprovedController.h; sourceTree = "<group>"; };
 		11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskImprovedController.m; sourceTree = "<group>"; };
+		11F9C8CB1FEF96600052515C /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		11F9C8CC1FEF96600052515C /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		11F9C8CD1FEF96600052515C /* FilterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -556,6 +561,7 @@
 				11F9C8BD1FEF65100052515C /* 蒙版动态显示 */,
 				11F9C8C21FEF6A5B0052515C /* 动态移动控件的两种方法 */,
 				11F9C8C61FEF87240052515C /* 蒙版动态显示增强版 */,
+				11F9C8CA1FEF920E0052515C /* 拉伸过滤 */,
 			);
 			name = "图层蒙版";
 			sourceTree = "<group>";
@@ -595,6 +601,16 @@
 				11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */,
 			);
 			name = "蒙版动态显示增强版";
+			sourceTree = "<group>";
+		};
+		11F9C8CA1FEF920E0052515C /* 拉伸过滤 */ = {
+			isa = PBXGroup;
+			children = (
+				11F9C8CB1FEF96600052515C /* FilterViewController.h */,
+				11F9C8CC1FEF96600052515C /* FilterViewController.m */,
+				11F9C8CD1FEF96600052515C /* FilterViewController.xib */,
+			);
+			name = "拉伸过滤";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -713,6 +729,7 @@
 				117FF9371FE64EAA003F2ADA /* shadowController.xib in Resources */,
 				117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */,
 				115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */,
+				11F9C8CF1FEF96600052515C /* FilterViewController.xib in Resources */,
 				117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */,
 				117FF93D1FE65435003F2ADA /* shadowTailoringController.xib in Resources */,
 				117FF92A1FE638DE003F2ADA /* AutoLayoutController.xib in Resources */,
@@ -763,6 +780,7 @@
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
 				117FF9361FE64EAA003F2ADA /* shadowController.m in Sources */,
 				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
+				11F9C8CE1FEF96600052515C /* FilterViewController.m in Sources */,
 				117FF91D1FE6310C003F2ADA /* HitScrollView.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,

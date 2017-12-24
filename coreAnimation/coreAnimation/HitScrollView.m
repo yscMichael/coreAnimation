@@ -29,7 +29,7 @@
         imageView.image = [UIImage imageNamed:self.dataArray[i]];
         [self.scrollView addSubview:imageView];
     }
-    self.scrollView.contentSize = CGSizeMake(width * 3, height);
+    self.scrollView.contentSize = CGSizeMake(width * self.dataArray.count, height);
     self.scrollView.clipsToBounds = NO;
 }
 
@@ -47,7 +47,12 @@
 {
     if (!_dataArray)
     {
-        _dataArray = [[NSMutableArray alloc]initWithObjects:@"2",@"3",@"4", nil];
+        _dataArray = [[NSMutableArray alloc]init];
+        for (int i = 0; i < 18; i ++)
+        {
+            [_dataArray addObject:[NSString stringWithFormat:@"%d",(i + 1)]];
+        }
+
     }
     return _dataArray;
 }

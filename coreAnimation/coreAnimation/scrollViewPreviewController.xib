@@ -20,20 +20,20 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVP-4P-gpy" customClass="HitScrollView">
-                    <rect key="frame" x="0.0" y="270" width="375" height="128"/>
+                    <rect key="frame" x="0.0" y="184" width="375" height="300"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIe-UB-K4X">
-                            <rect key="frame" x="80" y="0.0" width="215" height="128"/>
+                            <rect key="frame" x="80" y="0.0" width="215" height="300"/>
                             <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="128" id="sqM-fY-XAz"/>
+                                <constraint firstAttribute="height" constant="300" id="sqM-fY-XAz"/>
                             </constraints>
                         </scrollView>
                     </subviews>
                     <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="vIe-UB-K4X" firstAttribute="leading" secondItem="wVP-4P-gpy" secondAttribute="leading" constant="80" id="7Py-Vs-I8m"/>
-                        <constraint firstAttribute="height" constant="128" id="ILS-kZ-IT5"/>
+                        <constraint firstAttribute="height" constant="300" id="ILS-kZ-IT5"/>
                         <constraint firstAttribute="trailing" secondItem="vIe-UB-K4X" secondAttribute="trailing" constant="80" id="nVF-hb-vrq"/>
                         <constraint firstItem="vIe-UB-K4X" firstAttribute="centerY" secondItem="wVP-4P-gpy" secondAttribute="centerY" id="pdq-wB-GMI"/>
                     </constraints>
