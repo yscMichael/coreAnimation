@@ -562,6 +562,7 @@
 				11F9C8C21FEF6A5B0052515C /* 动态移动控件的两种方法 */,
 				11F9C8C61FEF87240052515C /* 蒙版动态显示增强版 */,
 				11F9C8CA1FEF920E0052515C /* 拉伸过滤 */,
+				11F9C8D01FEFBE7C0052515C /* 组透明-当前版本不存在这种情况 */,
 			);
 			name = "图层蒙版";
 			sourceTree = "<group>";
@@ -611,6 +612,13 @@
 				11F9C8CD1FEF96600052515C /* FilterViewController.xib */,
 			);
 			name = "拉伸过滤";
+			sourceTree = "<group>";
+		};
+		11F9C8D01FEFBE7C0052515C /* 组透明-当前版本不存在这种情况 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "组透明-当前版本不存在这种情况";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
