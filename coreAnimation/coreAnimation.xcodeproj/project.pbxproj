@@ -51,6 +51,7 @@
 		117FF9431FE658F9003F2ADA /* shadowPathController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9411FE658F9003F2ADA /* shadowPathController.xib */; };
 		117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9461FE6663F003F2ADA /* MaskViewController.m */; };
 		117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9471FE6663F003F2ADA /* MaskViewController.xib */; };
+		11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,8 @@
 		117FF9451FE6663F003F2ADA /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		117FF9461FE6663F003F2ADA /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		117FF9471FE6663F003F2ADA /* MaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
+		11F9C8BE1FEF658C0052515C /* DynamicMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskController.h; sourceTree = "<group>"; };
+		11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,11 +546,29 @@
 		117FF9441FE65EAA003F2ADA /* 图层蒙版 */ = {
 			isa = PBXGroup;
 			children = (
+				11F9C8BC1FEF64FE0052515C /* 基础例题 */,
+				11F9C8BD1FEF65100052515C /* 蒙版动态显示 */,
+			);
+			name = "图层蒙版";
+			sourceTree = "<group>";
+		};
+		11F9C8BC1FEF64FE0052515C /* 基础例题 */ = {
+			isa = PBXGroup;
+			children = (
 				117FF9451FE6663F003F2ADA /* MaskViewController.h */,
 				117FF9461FE6663F003F2ADA /* MaskViewController.m */,
 				117FF9471FE6663F003F2ADA /* MaskViewController.xib */,
 			);
-			name = "图层蒙版";
+			name = "基础例题";
+			sourceTree = "<group>";
+		};
+		11F9C8BD1FEF65100052515C /* 蒙版动态显示 */ = {
+			isa = PBXGroup;
+			children = (
+				11F9C8BE1FEF658C0052515C /* DynamicMaskController.h */,
+				11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */,
+			);
+			name = "蒙版动态显示";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,6 +730,7 @@
 				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
+				11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */,
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
