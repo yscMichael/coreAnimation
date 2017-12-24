@@ -25,7 +25,7 @@
     self.view.backgroundColor = [UIColor blueColor];
     //1、图片
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
-    imageView.image = [UIImage imageNamed:@"7"];
+    imageView.image = [UIImage imageNamed:@"8"];
     [self.view addSubview:imageView];
 
     //2、蒙版图层

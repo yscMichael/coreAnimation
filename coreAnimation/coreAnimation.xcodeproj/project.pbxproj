@@ -52,6 +52,8 @@
 		117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9461FE6663F003F2ADA /* MaskViewController.m */; };
 		117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9471FE6663F003F2ADA /* MaskViewController.xib */; };
 		11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */; };
+		11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */; };
+		11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +153,10 @@
 		117FF9471FE6663F003F2ADA /* MaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
 		11F9C8BE1FEF658C0052515C /* DynamicMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskController.h; sourceTree = "<group>"; };
 		11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskController.m; sourceTree = "<group>"; };
+		11F9C8C31FEF6A890052515C /* TwoMethodsMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoMethodsMoveViewController.h; sourceTree = "<group>"; };
+		11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoMethodsMoveViewController.m; sourceTree = "<group>"; };
+		11F9C8C71FEF87B80052515C /* DynamicMaskImprovedController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskImprovedController.h; sourceTree = "<group>"; };
+		11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskImprovedController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -548,6 +554,8 @@
 			children = (
 				11F9C8BC1FEF64FE0052515C /* 基础例题 */,
 				11F9C8BD1FEF65100052515C /* 蒙版动态显示 */,
+				11F9C8C21FEF6A5B0052515C /* 动态移动控件的两种方法 */,
+				11F9C8C61FEF87240052515C /* 蒙版动态显示增强版 */,
 			);
 			name = "图层蒙版";
 			sourceTree = "<group>";
@@ -569,6 +577,24 @@
 				11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */,
 			);
 			name = "蒙版动态显示";
+			sourceTree = "<group>";
+		};
+		11F9C8C21FEF6A5B0052515C /* 动态移动控件的两种方法 */ = {
+			isa = PBXGroup;
+			children = (
+				11F9C8C31FEF6A890052515C /* TwoMethodsMoveViewController.h */,
+				11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */,
+			);
+			name = "动态移动控件的两种方法";
+			sourceTree = "<group>";
+		};
+		11F9C8C61FEF87240052515C /* 蒙版动态显示增强版 */ = {
+			isa = PBXGroup;
+			children = (
+				11F9C8C71FEF87B80052515C /* DynamicMaskImprovedController.h */,
+				11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */,
+			);
+			name = "蒙版动态显示增强版";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -718,6 +744,7 @@
 				117FF9421FE658F9003F2ADA /* shadowPathController.m in Sources */,
 				117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */,
 				117FF92F1FE64BF5003F2ADA /* cornerViewController.m in Sources */,
+				11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */,
 				115AE2FA1F938CF800989785 /* ViewController.m in Sources */,
 				115AE2F71F938CF800989785 /* AppDelegate.m in Sources */,
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
@@ -744,6 +771,7 @@
 				117FF9081FE61522003F2ADA /* HWButton.m in Sources */,
 				117FF9211FE63130003F2ADA /* scrollViewPreviewController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
+				11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -124,7 +124,9 @@
                         @"阴影剪裁",
                         @"阴影按照形状剪裁",
                         @"基本图层蒙版",
-                        @"蒙版动态显示"],
+                        @"蒙版动态显示",
+                        @"动态移动控件的两种方法",
+                        @"蒙版动态显示增强"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -155,7 +157,9 @@
                               @"shadowTailoringController",
                               @"shadowPathController",
                               @"MaskViewController",
-                              @"DynamicMaskController"],
+                              @"DynamicMaskController",
+                              @"TwoMethodsMoveViewController",
+                              @"DynamicMaskImprovedController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
