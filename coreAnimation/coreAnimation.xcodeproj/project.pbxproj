@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6420197EB400E8C277 /* AffineTransformController.m */; };
 		1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369B1FD3A0DB00A33761 /* stretchViewController.m */; };
 		1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369E1FD3A10300A33761 /* redrawViewController.m */; };
 		115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036A91FD3AED800A33761 /* AlarmClockController.m */; };
@@ -76,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1148BD6320197EB400E8C277 /* AffineTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineTransformController.h; sourceTree = "<group>"; };
+		1148BD6420197EB400E8C277 /* AffineTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineTransformController.m; sourceTree = "<group>"; };
 		1150369A1FD3A0DB00A33761 /* stretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stretchViewController.h; path = coreAnimation/stretchViewController.h; sourceTree = "<group>"; };
 		1150369B1FD3A0DB00A33761 /* stretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stretchViewController.m; path = coreAnimation/stretchViewController.m; sourceTree = "<group>"; };
 		1150369D1FD3A10300A33761 /* redrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = redrawViewController.h; path = coreAnimation/redrawViewController.h; sourceTree = "<group>"; };
@@ -189,6 +192,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1148BD6620197FC900E8C277 /* 仿射变换 */ = {
+			isa = PBXGroup;
+			children = (
+				1148BD6320197EB400E8C277 /* AffineTransformController.h */,
+				1148BD6420197EB400E8C277 /* AffineTransformController.m */,
+			);
+			name = "仿射变换";
+			sourceTree = "<group>";
+		};
 		1148BDE41FCAA0D40021375B /* 图层树 */ = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +637,7 @@
 		11F9C8D11FEFC1D00052515C /* 变换 */ = {
 			isa = PBXGroup;
 			children = (
+				1148BD6620197FC900E8C277 /* 仿射变换 */,
 			);
 			name = "变换";
 			sourceTree = "<group>";
@@ -788,6 +801,7 @@
 				117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
 				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
+				1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */,
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
 				11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */,

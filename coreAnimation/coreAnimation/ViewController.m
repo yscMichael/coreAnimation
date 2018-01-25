@@ -93,6 +93,7 @@
                           @"寄宿图",
                           @"图层几何学",
                           @"视觉效果",
+                          @"变换",
                           @"动画制作方式",
                           @"动画和layer属性关系", nil];
     }
@@ -128,6 +129,8 @@
                         @"动态移动控件的两种方法",
                         @"蒙版动态显示增强",
                         @"拉伸过滤"],
+                      @[@"仿射变换"
+                        ],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -162,6 +165,8 @@
                               @"TwoMethodsMoveViewController",
                               @"DynamicMaskImprovedController",
                               @"FilterViewController"],
+                            @[@"AffineTransformController"
+                              ],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
