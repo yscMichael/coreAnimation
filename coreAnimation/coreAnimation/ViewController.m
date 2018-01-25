@@ -129,8 +129,8 @@
                         @"动态移动控件的两种方法",
                         @"蒙版动态显示增强",
                         @"拉伸过滤"],
-                      @[@"仿射变换"
-                        ],
+                      @[@"仿射变换",
+                        @"3D变换"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -165,8 +165,8 @@
                               @"TwoMethodsMoveViewController",
                               @"DynamicMaskImprovedController",
                               @"FilterViewController"],
-                            @[@"AffineTransformController"
-                              ],
+                            @[@"AffineTransformController",
+                              @"BasicThreeListViewController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

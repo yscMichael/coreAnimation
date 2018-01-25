@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6420197EB400E8C277 /* AffineTransformController.m */; };
+		1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD692019864100E8C277 /* BasicThreeDViewController.m */; };
+		1148BD6D2019865A00E8C277 /* BasicThreeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6C2019865A00E8C277 /* BasicThreeListViewController.m */; };
+		1148BD7320198DBC00E8C277 /* subLayerTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD7220198DBC00E8C277 /* subLayerTransformController.m */; };
+		1148BD7520198E8300E8C277 /* subLayerTransformController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148BD7420198E8300E8C277 /* subLayerTransformController.xib */; };
 		1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369B1FD3A0DB00A33761 /* stretchViewController.m */; };
 		1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369E1FD3A10300A33761 /* redrawViewController.m */; };
 		115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036A91FD3AED800A33761 /* AlarmClockController.m */; };
@@ -79,6 +83,13 @@
 /* Begin PBXFileReference section */
 		1148BD6320197EB400E8C277 /* AffineTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineTransformController.h; sourceTree = "<group>"; };
 		1148BD6420197EB400E8C277 /* AffineTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineTransformController.m; sourceTree = "<group>"; };
+		1148BD682019864100E8C277 /* BasicThreeDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicThreeDViewController.h; sourceTree = "<group>"; };
+		1148BD692019864100E8C277 /* BasicThreeDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicThreeDViewController.m; sourceTree = "<group>"; };
+		1148BD6B2019865A00E8C277 /* BasicThreeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicThreeListViewController.h; sourceTree = "<group>"; };
+		1148BD6C2019865A00E8C277 /* BasicThreeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicThreeListViewController.m; sourceTree = "<group>"; };
+		1148BD7120198DBC00E8C277 /* subLayerTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subLayerTransformController.h; sourceTree = "<group>"; };
+		1148BD7220198DBC00E8C277 /* subLayerTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subLayerTransformController.m; sourceTree = "<group>"; };
+		1148BD7420198E8300E8C277 /* subLayerTransformController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = subLayerTransformController.xib; sourceTree = "<group>"; };
 		1150369A1FD3A0DB00A33761 /* stretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stretchViewController.h; path = coreAnimation/stretchViewController.h; sourceTree = "<group>"; };
 		1150369B1FD3A0DB00A33761 /* stretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stretchViewController.m; path = coreAnimation/stretchViewController.m; sourceTree = "<group>"; };
 		1150369D1FD3A10300A33761 /* redrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = redrawViewController.h; path = coreAnimation/redrawViewController.h; sourceTree = "<group>"; };
@@ -199,6 +210,44 @@
 				1148BD6420197EB400E8C277 /* AffineTransformController.m */,
 			);
 			name = "仿射变换";
+			sourceTree = "<group>";
+		};
+		1148BD67201985F200E8C277 /* 3D变换 */ = {
+			isa = PBXGroup;
+			children = (
+				1148BD6E2019866100E8C277 /* 3D变换列表 */,
+				1148BD6F2019867600E8C277 /* 3D变换--透视投影 */,
+				1148BD7020198D3200E8C277 /* 3D变换--灭点 */,
+			);
+			name = "3D变换";
+			sourceTree = "<group>";
+		};
+		1148BD6E2019866100E8C277 /* 3D变换列表 */ = {
+			isa = PBXGroup;
+			children = (
+				1148BD6B2019865A00E8C277 /* BasicThreeListViewController.h */,
+				1148BD6C2019865A00E8C277 /* BasicThreeListViewController.m */,
+			);
+			name = "3D变换列表";
+			sourceTree = "<group>";
+		};
+		1148BD6F2019867600E8C277 /* 3D变换--透视投影 */ = {
+			isa = PBXGroup;
+			children = (
+				1148BD682019864100E8C277 /* BasicThreeDViewController.h */,
+				1148BD692019864100E8C277 /* BasicThreeDViewController.m */,
+			);
+			name = "3D变换--透视投影";
+			sourceTree = "<group>";
+		};
+		1148BD7020198D3200E8C277 /* 3D变换--灭点 */ = {
+			isa = PBXGroup;
+			children = (
+				1148BD7120198DBC00E8C277 /* subLayerTransformController.h */,
+				1148BD7220198DBC00E8C277 /* subLayerTransformController.m */,
+				1148BD7420198E8300E8C277 /* subLayerTransformController.xib */,
+			);
+			name = "3D变换--灭点";
 			sourceTree = "<group>";
 		};
 		1148BDE41FCAA0D40021375B /* 图层树 */ = {
@@ -638,6 +687,7 @@
 			isa = PBXGroup;
 			children = (
 				1148BD6620197FC900E8C277 /* 仿射变换 */,
+				1148BD67201985F200E8C277 /* 3D变换 */,
 			);
 			name = "变换";
 			sourceTree = "<group>";
@@ -755,6 +805,7 @@
 				117FF9301FE64BF5003F2ADA /* cornerViewController.xib in Resources */,
 				115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */,
 				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
+				1148BD7520198E8300E8C277 /* subLayerTransformController.xib in Resources */,
 				117FF9371FE64EAA003F2ADA /* shadowController.xib in Resources */,
 				117FF9111FE61F40003F2ADA /* beyondRangeController.xib in Resources */,
 				115036BE1FD3EBA200A33761 /* ZPositionController.xib in Resources */,
@@ -798,8 +849,10 @@
 				117FF9291FE638DE003F2ADA /* AutoLayoutController.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
+				1148BD7320198DBC00E8C277 /* subLayerTransformController.m in Sources */,
 				117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
+				1148BD6D2019865A00E8C277 /* BasicThreeListViewController.m in Sources */,
 				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
 				1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */,
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
@@ -808,6 +861,7 @@
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
+				1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */,
 				117FF9361FE64EAA003F2ADA /* shadowController.m in Sources */,
 				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
 				11F9C8CE1FEF96600052515C /* FilterViewController.m in Sources */,

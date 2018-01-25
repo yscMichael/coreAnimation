@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="subLayerTransformController">
+            <connections>
+                <outlet property="containerView" destination="wFz-mj-TQP" id="xPD-gu-ZhK"/>
+                <outlet property="oneImageView" destination="4Ei-Se-Ur2" id="Qbo-XX-XT9"/>
+                <outlet property="twoImageView" destination="P5Y-hh-5jt" id="zGY-9b-nTy"/>
+                <outlet property="view" destination="iN0-l3-epB" id="seE-fB-63f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFz-mj-TQP" userLabel="containerView">
+                    <rect key="frame" x="0.0" y="100" width="375" height="400"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14" translatesAutoresizingMaskIntoConstraints="NO" id="4Ei-Se-Ur2" userLabel="oneImageView">
+                            <rect key="frame" x="8" y="88" width="176" height="224"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="176" id="2MY-tJ-34S"/>
+                                <constraint firstAttribute="height" constant="224" id="6f3-Rl-iuc"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12" translatesAutoresizingMaskIntoConstraints="NO" id="P5Y-hh-5jt" userLabel="twoImageView">
+                            <rect key="frame" x="191" y="88" width="176" height="224"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="224" id="hHu-TS-2HQ"/>
+                                <constraint firstAttribute="width" constant="176" id="xnq-av-CXp"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="B1f-nd-urZ"/>
+                        <constraint firstItem="4Ei-Se-Ur2" firstAttribute="leading" secondItem="wFz-mj-TQP" secondAttribute="leading" constant="8" id="MKk-Mc-IG3"/>
+                        <constraint firstAttribute="trailing" secondItem="P5Y-hh-5jt" secondAttribute="trailing" constant="8" id="U4J-dF-Gsb"/>
+                        <constraint firstItem="P5Y-hh-5jt" firstAttribute="centerY" secondItem="wFz-mj-TQP" secondAttribute="centerY" id="opr-Zd-ldz"/>
+                        <constraint firstItem="4Ei-Se-Ur2" firstAttribute="centerY" secondItem="wFz-mj-TQP" secondAttribute="centerY" id="tkF-KR-Utl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wFz-mj-TQP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="GNY-9G-BfD"/>
+                <constraint firstAttribute="trailing" secondItem="wFz-mj-TQP" secondAttribute="trailing" id="Iz3-Ky-TUH"/>
+                <constraint firstItem="wFz-mj-TQP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="Y8W-ff-XWu"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="12" width="250" height="375"/>
+        <image name="14" width="250" height="397"/>
+    </resources>
+</document>
