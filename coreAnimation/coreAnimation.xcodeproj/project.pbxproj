@@ -12,6 +12,9 @@
 		1148BD6D2019865A00E8C277 /* BasicThreeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6C2019865A00E8C277 /* BasicThreeListViewController.m */; };
 		1148BD7320198DBC00E8C277 /* subLayerTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD7220198DBC00E8C277 /* subLayerTransformController.m */; };
 		1148BD7520198E8300E8C277 /* subLayerTransformController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148BD7420198E8300E8C277 /* subLayerTransformController.xib */; };
+		1148BD792019CA3A00E8C277 /* InAndOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD782019CA3A00E8C277 /* InAndOutViewController.m */; };
+		1148BD7D2019F96C00E8C277 /* threeDTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD7C2019F96C00E8C277 /* threeDTransformController.m */; };
+		1148BD7F2019FA7100E8C277 /* threeDTransformController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1148BD7E2019FA7100E8C277 /* threeDTransformController.xib */; };
 		1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369B1FD3A0DB00A33761 /* stretchViewController.m */; };
 		1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1150369E1FD3A10300A33761 /* redrawViewController.m */; };
 		115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115036A91FD3AED800A33761 /* AlarmClockController.m */; };
@@ -90,6 +93,11 @@
 		1148BD7120198DBC00E8C277 /* subLayerTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subLayerTransformController.h; sourceTree = "<group>"; };
 		1148BD7220198DBC00E8C277 /* subLayerTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subLayerTransformController.m; sourceTree = "<group>"; };
 		1148BD7420198E8300E8C277 /* subLayerTransformController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = subLayerTransformController.xib; sourceTree = "<group>"; };
+		1148BD772019CA3A00E8C277 /* InAndOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAndOutViewController.h; sourceTree = "<group>"; };
+		1148BD782019CA3A00E8C277 /* InAndOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAndOutViewController.m; sourceTree = "<group>"; };
+		1148BD7B2019F96C00E8C277 /* threeDTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threeDTransformController.h; sourceTree = "<group>"; };
+		1148BD7C2019F96C00E8C277 /* threeDTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = threeDTransformController.m; sourceTree = "<group>"; };
+		1148BD7E2019FA7100E8C277 /* threeDTransformController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = threeDTransformController.xib; sourceTree = "<group>"; };
 		1150369A1FD3A0DB00A33761 /* stretchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stretchViewController.h; path = coreAnimation/stretchViewController.h; sourceTree = "<group>"; };
 		1150369B1FD3A0DB00A33761 /* stretchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = stretchViewController.m; path = coreAnimation/stretchViewController.m; sourceTree = "<group>"; };
 		1150369D1FD3A10300A33761 /* redrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = redrawViewController.h; path = coreAnimation/redrawViewController.h; sourceTree = "<group>"; };
@@ -218,6 +226,8 @@
 				1148BD6E2019866100E8C277 /* 3D变换列表 */,
 				1148BD6F2019867600E8C277 /* 3D变换--透视投影 */,
 				1148BD7020198D3200E8C277 /* 3D变换--灭点 */,
+				1148BD762019C97A00E8C277 /* 3D变换--父子同时变换 */,
+				1148BD7A2019D47200E8C277 /* 固体对象 */,
 			);
 			name = "3D变换";
 			sourceTree = "<group>";
@@ -248,6 +258,25 @@
 				1148BD7420198E8300E8C277 /* subLayerTransformController.xib */,
 			);
 			name = "3D变换--灭点";
+			sourceTree = "<group>";
+		};
+		1148BD762019C97A00E8C277 /* 3D变换--父子同时变换 */ = {
+			isa = PBXGroup;
+			children = (
+				1148BD772019CA3A00E8C277 /* InAndOutViewController.h */,
+				1148BD782019CA3A00E8C277 /* InAndOutViewController.m */,
+			);
+			name = "3D变换--父子同时变换";
+			sourceTree = "<group>";
+		};
+		1148BD7A2019D47200E8C277 /* 固体对象 */ = {
+			isa = PBXGroup;
+			children = (
+				1148BD7B2019F96C00E8C277 /* threeDTransformController.h */,
+				1148BD7C2019F96C00E8C277 /* threeDTransformController.m */,
+				1148BD7E2019FA7100E8C277 /* threeDTransformController.xib */,
+			);
+			name = "固体对象";
 			sourceTree = "<group>";
 		};
 		1148BDE41FCAA0D40021375B /* 图层树 */ = {
@@ -799,6 +828,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				117FF9431FE658F9003F2ADA /* shadowPathController.xib in Resources */,
+				1148BD7F2019FA7100E8C277 /* threeDTransformController.xib in Resources */,
 				117FF9241FE63291003F2ADA /* scrollViewPreviewController.xib in Resources */,
 				115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */,
 				115AE2FF1F938CF800989785 /* Assets.xcassets in Resources */,
@@ -858,6 +888,7 @@
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
 				11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */,
+				1148BD7D2019F96C00E8C277 /* threeDTransformController.m in Sources */,
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
@@ -870,6 +901,7 @@
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
 				117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */,
+				1148BD792019CA3A00E8C277 /* InAndOutViewController.m in Sources */,
 				117FF9081FE61522003F2ADA /* HWButton.m in Sources */,
 				117FF9211FE63130003F2ADA /* scrollViewPreviewController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,

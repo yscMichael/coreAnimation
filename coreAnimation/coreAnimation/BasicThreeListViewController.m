@@ -75,6 +75,8 @@
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @"3D变换--透视投影",
                       @"3D变换--灭点",
+                      @"3D变换--父子同时变换",
+                      @"3D变换--手动旋转",
                       nil];
     }
     return _dataSoure;
@@ -87,6 +89,8 @@
         _controllerSoure = [[NSMutableArray alloc]initWithObjects:
                             @"BasicThreeDViewController",
                             @"subLayerTransformController",
+                            @"InAndOutViewController",
+                            @"threeDTransformController",
                             nil];
     }
     return _controllerSoure;
