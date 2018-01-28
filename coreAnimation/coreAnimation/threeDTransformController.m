@@ -27,7 +27,7 @@
 
     //add cube face 1
     CATransform3D diceTransform = CATransform3DIdentity;
-    diceTransform = CATransform3DScale(diceTransform, 0, 0, 75);
+    diceTransform = CATransform3DTranslate(diceTransform, 0, 0, 75);
     [self addFace:0 withTransform:diceTransform];
 
     //add cube face 2
@@ -37,7 +37,7 @@
 
     //add cube face 3
     //move this code after the setup for face no. 6 to enable button
-    diceTransform = CATransform3DTranslate(CATransform3DIdentity, 0, 0, -75);
+    diceTransform = CATransform3DTranslate(CATransform3DIdentity, 0, -75, 0);
     diceTransform = CATransform3DRotate(diceTransform, M_PI_2, 1, 0, 0);
     [self addFace:2 withTransform:diceTransform];
 
@@ -67,6 +67,7 @@
                               containerSize.height / 2.0);
 
     face.layer.transform = transform;
+    face.layer.doubleSided = NO;
 }
 
 - (void)viewTransform:(UIPanGestureRecognizer *)sender
@@ -79,7 +80,7 @@
     transform.m34 = -1 / 500;
     transform = CATransform3DRotate(transform, angleX, 0, 1, 0);
     transform = CATransform3DRotate(transform, angleY, 1, 0, 0);
-    self.contentView.layer.transform = transform;
+    self.contentView.layer.sublayerTransform = transform;
 
     if (sender.state == UIGestureRecognizerStateEnded)
     {
