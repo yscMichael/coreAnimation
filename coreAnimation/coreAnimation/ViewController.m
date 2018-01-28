@@ -94,6 +94,7 @@
                           @"图层几何学",
                           @"视觉效果",
                           @"变换",
+                          @"专用图层",
                           @"动画制作方式",
                           @"动画和layer属性关系", nil];
     }
@@ -131,6 +132,7 @@
                         @"拉伸过滤"],
                       @[@"仿射变换",
                         @"3D变换"],
+                      @[@"贝赛尔曲线"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -167,6 +169,7 @@
                               @"FilterViewController"],
                             @[@"AffineTransformController",
                               @"BasicThreeListViewController"],
+                            @[@"layerListController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
