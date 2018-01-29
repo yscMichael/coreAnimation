@@ -73,6 +73,7 @@
     {
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @"贝赛尔曲线基础知识",
+                      @"CAShapeLayer",
                       nil];
     }
     return _dataSoure;
@@ -84,6 +85,7 @@
     {
         _controllerSoure = [[NSMutableArray alloc]initWithObjects:
                             @"BezierPathViewController",
+                            @"CAShapeLayerController",
                             nil];
     }
     return _controllerSoure;

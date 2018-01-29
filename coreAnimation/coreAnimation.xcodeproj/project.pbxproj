@@ -40,6 +40,8 @@
 		115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115AE3001F938CF800989785 /* LaunchScreen.storyboard */; };
 		115AE30D1F938CF800989785 /* coreAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE30C1F938CF800989785 /* coreAnimationTests.m */; };
 		115AE3181F938CF800989785 /* coreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE3171F938CF800989785 /* coreAnimationUITests.m */; };
+		115B1DF7201F478200C6EE93 /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B1DF6201F478200C6EE93 /* CAShapeLayerController.m */; };
+		115B1DFA201F4A3D00C6EE93 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B1DF9201F4A3D00C6EE93 /* BezierPathView.m */; };
 		117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */; };
 		117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9041FE61501003F2ADA /* UIButton+ExpandArea.m */; };
 		117FF9081FE61522003F2ADA /* HWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9071FE61522003F2ADA /* HWButton.m */; };
@@ -147,6 +149,10 @@
 		115AE3131F938CF800989785 /* coreAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		115AE3171F938CF800989785 /* coreAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = coreAnimationUITests.m; sourceTree = "<group>"; };
 		115AE3191F938CF800989785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115B1DF5201F478200C6EE93 /* CAShapeLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAShapeLayerController.h; sourceTree = "<group>"; };
+		115B1DF6201F478200C6EE93 /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
+		115B1DF8201F4A3D00C6EE93 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
+		115B1DF9201F4A3D00C6EE93 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
 		117FF8FD1FE6149E003F2ADA /* expandButtonAreaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expandButtonAreaController.h; sourceTree = "<group>"; };
 		117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = expandButtonAreaController.m; sourceTree = "<group>"; };
 		117FF9031FE61501003F2ADA /* UIButton+ExpandArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ExpandArea.h"; sourceTree = "<group>"; };
@@ -232,6 +238,8 @@
 			children = (
 				112223D8201DC80200B3DBC0 /* BezierPathViewController.h */,
 				112223D9201DC80200B3DBC0 /* BezierPathViewController.m */,
+				115B1DF8201F4A3D00C6EE93 /* BezierPathView.h */,
+				115B1DF9201F4A3D00C6EE93 /* BezierPathView.m */,
 			);
 			name = "贝赛尔曲线";
 			sourceTree = "<group>";
@@ -239,6 +247,8 @@
 		112223E0201DC8AF00B3DBC0 /* CAShapeLayer */ = {
 			isa = PBXGroup;
 			children = (
+				115B1DF5201F478200C6EE93 /* CAShapeLayerController.h */,
+				115B1DF6201F478200C6EE93 /* CAShapeLayerController.m */,
 			);
 			name = CAShapeLayer;
 			sourceTree = "<group>";
@@ -949,6 +959,8 @@
 				117FF9081FE61522003F2ADA /* HWButton.m in Sources */,
 				117FF9211FE63130003F2ADA /* scrollViewPreviewController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
+				115B1DF7201F478200C6EE93 /* CAShapeLayerController.m in Sources */,
+				115B1DFA201F4A3D00C6EE93 /* BezierPathView.m in Sources */,
 				11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
