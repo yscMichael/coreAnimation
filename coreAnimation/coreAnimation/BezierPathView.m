@@ -146,9 +146,9 @@
 {
     UIBezierPath *path = [UIBezierPath bezierPath];
     //起始点
-    [path moveToPoint:CGPointMake(0, self.frame.size.height/2.0)];
+    [path moveToPoint:CGPointMake(0, self.frame.size.height)];
     //终点、控制点
-    [path addQuadCurveToPoint:CGPointMake(self.frame.size.width/2.0, 0) controlPoint:CGPointMake(self.frame.size.width/2.0, self.frame.size.height/2.0)];
+    [path addQuadCurveToPoint:CGPointMake(self.frame.size.width, 0) controlPoint:CGPointMake(self.frame.size.width, self.frame.size.height)];
 
     path.lineWidth = 2.0;
     [[UIColor greenColor] setStroke];
@@ -178,7 +178,7 @@
     [path addLineToPoint:CGPointMake(self.frame.size.width/2.0, self.frame.size.height/2.0)];
     [path addLineToPoint:CGPointMake(self.frame.size.width, self.frame.size.height/2.0)];
 
-    path.lineWidth = 2.0;
+    path.lineWidth = 10.0;
     [[UIColor greenColor] setStroke];
     [[UIColor redColor] setFill];
     [path stroke];

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		112223DA201DC80200B3DBC0 /* BezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112223D9201DC80200B3DBC0 /* BezierPathViewController.m */; };
 		112223DD201DC84C00B3DBC0 /* layerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112223DC201DC84C00B3DBC0 /* layerListController.m */; };
+		1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135C7592025F5790053B7E8 /* CAProgressController.m */; };
 		1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6420197EB400E8C277 /* AffineTransformController.m */; };
 		1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD692019864100E8C277 /* BasicThreeDViewController.m */; };
 		1148BD6D2019865A00E8C277 /* BasicThreeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6C2019865A00E8C277 /* BasicThreeListViewController.m */; };
@@ -92,6 +93,8 @@
 		112223D9201DC80200B3DBC0 /* BezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathViewController.m; sourceTree = "<group>"; };
 		112223DB201DC84C00B3DBC0 /* layerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerListController.h; sourceTree = "<group>"; };
 		112223DC201DC84C00B3DBC0 /* layerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = layerListController.m; sourceTree = "<group>"; };
+		1135C7582025F5790053B7E8 /* CAProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProgressController.h; sourceTree = "<group>"; };
+		1135C7592025F5790053B7E8 /* CAProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAProgressController.m; sourceTree = "<group>"; };
 		1148BD6320197EB400E8C277 /* AffineTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineTransformController.h; sourceTree = "<group>"; };
 		1148BD6420197EB400E8C277 /* AffineTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineTransformController.m; sourceTree = "<group>"; };
 		1148BD682019864100E8C277 /* BasicThreeDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicThreeDViewController.h; sourceTree = "<group>"; };
@@ -229,6 +232,7 @@
 				112223E1201DC8CB00B3DBC0 /* 列表 */,
 				112223DE201DC86500B3DBC0 /* 贝赛尔曲线 */,
 				112223E0201DC8AF00B3DBC0 /* CAShapeLayer */,
+				1135C7572025F5680053B7E8 /* 进度条 */,
 			);
 			name = "专用图层";
 			sourceTree = "<group>";
@@ -260,6 +264,15 @@
 				112223DC201DC84C00B3DBC0 /* layerListController.m */,
 			);
 			name = "列表";
+			sourceTree = "<group>";
+		};
+		1135C7572025F5680053B7E8 /* 进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				1135C7582025F5790053B7E8 /* CAProgressController.h */,
+				1135C7592025F5790053B7E8 /* CAProgressController.m */,
+			);
+			name = "进度条";
 			sourceTree = "<group>";
 		};
 		1148BD6620197FC900E8C277 /* 仿射变换 */ = {
@@ -952,6 +965,7 @@
 				112223DD201DC84C00B3DBC0 /* layerListController.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
+				1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */,
 				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
 				117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */,
 				112223DA201DC80200B3DBC0 /* BezierPathViewController.m in Sources */,

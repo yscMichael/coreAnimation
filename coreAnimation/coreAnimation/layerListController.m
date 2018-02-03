@@ -51,6 +51,11 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     cell.textLabel.text = self.dataSoure[indexPath.row];
+    if (indexPath.row == 2)
+    {
+        cell.backgroundColor = [UIColor blueColor];
+        cell.textLabel.textColor = [UIColor whiteColor];
+    }
 
     return cell;
 }
@@ -73,7 +78,8 @@
     {
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @"贝赛尔曲线基础知识",
-                      @"CAShapeLayer",
+                      @"CAShapeLayer基础知识",
+                      @"进度条总结",
                       nil];
     }
     return _dataSoure;
@@ -86,6 +92,7 @@
         _controllerSoure = [[NSMutableArray alloc]initWithObjects:
                             @"BezierPathViewController",
                             @"CAShapeLayerController",
+                            @"CAProgressController",
                             nil];
     }
     return _controllerSoure;

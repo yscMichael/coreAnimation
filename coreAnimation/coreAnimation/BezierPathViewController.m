@@ -111,6 +111,8 @@
 - (void)drawCurveToPoint
 {
     BezierPathView *bezierPathView = [[BezierPathView alloc]initWithFrame:CGRectMake(300, 300, 100, 100)];
+    bezierPathView.layer.borderColor = [UIColor blueColor].CGColor;
+    bezierPathView.layer.borderWidth = 2.0;
     bezierPathView.methodString = @"drawCurveToPoint";
     [self.scrollView addSubview:bezierPathView];
 }
@@ -118,7 +120,9 @@
 #pragma mark - 绘制二次曲线
 - (void)drawQuadCurveToPoint
 {
-    BezierPathView *bezierPathView = [[BezierPathView alloc]initWithFrame:CGRectMake(50, 400, 100, 100)];
+    BezierPathView *bezierPathView = [[BezierPathView alloc]initWithFrame:CGRectMake(0, 450, 100, 100)];
+    bezierPathView.layer.borderColor = [UIColor blueColor].CGColor;
+    bezierPathView.layer.borderWidth = 2.0;
     bezierPathView.methodString = @"drawQuadCurveToPoint";
     [self.scrollView addSubview:bezierPathView];
 }
@@ -126,7 +130,9 @@
 #pragma mark - 绘制进度条、待定
 - (void)drawProgress
 {
-    BezierPathView *bezierPathView = [[BezierPathView alloc]initWithFrame:CGRectMake(100, 350, 100, 100)];
+    BezierPathView *bezierPathView = [[BezierPathView alloc]initWithFrame:CGRectMake(150, 450, 100, 100)];
+    bezierPathView.layer.borderColor = [UIColor blueColor].CGColor;
+    bezierPathView.layer.borderWidth = 2.0;
     bezierPathView.methodString = @"drawProgress";
     [self.scrollView addSubview:bezierPathView];
 }
@@ -134,7 +140,9 @@
 #pragma mark - lineCapStyle、lineJoinStyle样式设置
 - (void)drawLineStyle
 {
-    BezierPathView *bezierPathView = [[BezierPathView alloc]initWithFrame:CGRectMake(250, 400, 100, 100)];
+    BezierPathView *bezierPathView = [[BezierPathView alloc]initWithFrame:CGRectMake(300, 450, 100, 100)];
+    bezierPathView.layer.borderColor = [UIColor blueColor].CGColor;
+    bezierPathView.layer.borderWidth = 2.0;
     bezierPathView.methodString = @"drawLineStyle";
     [self.scrollView addSubview:bezierPathView];
 }
