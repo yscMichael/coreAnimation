@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		112223DA201DC80200B3DBC0 /* BezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112223D9201DC80200B3DBC0 /* BezierPathViewController.m */; };
-		112223DD201DC84C00B3DBC0 /* layerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112223DC201DC84C00B3DBC0 /* layerListController.m */; };
 		1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135C7592025F5790053B7E8 /* CAProgressController.m */; };
 		1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6420197EB400E8C277 /* AffineTransformController.m */; };
 		1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD692019864100E8C277 /* BasicThreeDViewController.m */; };
@@ -43,6 +42,8 @@
 		115AE3181F938CF800989785 /* coreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE3171F938CF800989785 /* coreAnimationUITests.m */; };
 		115B1DF7201F478200C6EE93 /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B1DF6201F478200C6EE93 /* CAShapeLayerController.m */; };
 		115B1DFA201F4A3D00C6EE93 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B1DF9201F4A3D00C6EE93 /* BezierPathView.m */; };
+		116A84FC20287EB60084C337 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116A84FB20287EB60084C337 /* CircleViewController.m */; };
+		116A84FF20287EF30084C337 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 116A84FE20287EF30084C337 /* CircleView.m */; };
 		117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */; };
 		117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9041FE61501003F2ADA /* UIButton+ExpandArea.m */; };
 		117FF9081FE61522003F2ADA /* HWButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9071FE61522003F2ADA /* HWButton.m */; };
@@ -91,8 +92,6 @@
 /* Begin PBXFileReference section */
 		112223D8201DC80200B3DBC0 /* BezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathViewController.h; sourceTree = "<group>"; };
 		112223D9201DC80200B3DBC0 /* BezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathViewController.m; sourceTree = "<group>"; };
-		112223DB201DC84C00B3DBC0 /* layerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = layerListController.h; sourceTree = "<group>"; };
-		112223DC201DC84C00B3DBC0 /* layerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = layerListController.m; sourceTree = "<group>"; };
 		1135C7582025F5790053B7E8 /* CAProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProgressController.h; sourceTree = "<group>"; };
 		1135C7592025F5790053B7E8 /* CAProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAProgressController.m; sourceTree = "<group>"; };
 		1148BD6320197EB400E8C277 /* AffineTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineTransformController.h; sourceTree = "<group>"; };
@@ -156,6 +155,10 @@
 		115B1DF6201F478200C6EE93 /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
 		115B1DF8201F4A3D00C6EE93 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
 		115B1DF9201F4A3D00C6EE93 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
+		116A84FA20287EB60084C337 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		116A84FB20287EB60084C337 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		116A84FD20287EF30084C337 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		116A84FE20287EF30084C337 /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		117FF8FD1FE6149E003F2ADA /* expandButtonAreaController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = expandButtonAreaController.h; sourceTree = "<group>"; };
 		117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = expandButtonAreaController.m; sourceTree = "<group>"; };
 		117FF9031FE61501003F2ADA /* UIButton+ExpandArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ExpandArea.h"; sourceTree = "<group>"; };
@@ -229,7 +232,6 @@
 		112223D7201DC78B00B3DBC0 /* 专用图层 */ = {
 			isa = PBXGroup;
 			children = (
-				112223E1201DC8CB00B3DBC0 /* 列表 */,
 				112223DE201DC86500B3DBC0 /* 贝赛尔曲线 */,
 				112223E0201DC8AF00B3DBC0 /* CAShapeLayer */,
 				1135C7572025F5680053B7E8 /* 进度条 */,
@@ -257,20 +259,11 @@
 			name = CAShapeLayer;
 			sourceTree = "<group>";
 		};
-		112223E1201DC8CB00B3DBC0 /* 列表 */ = {
-			isa = PBXGroup;
-			children = (
-				112223DB201DC84C00B3DBC0 /* layerListController.h */,
-				112223DC201DC84C00B3DBC0 /* layerListController.m */,
-			);
-			name = "列表";
-			sourceTree = "<group>";
-		};
 		1135C7572025F5680053B7E8 /* 进度条 */ = {
 			isa = PBXGroup;
 			children = (
-				1135C7582025F5790053B7E8 /* CAProgressController.h */,
-				1135C7592025F5790053B7E8 /* CAProgressController.m */,
+				116A84F820287E7E0084C337 /* 进度条列表 */,
+				116A84F920287E970084C337 /* 圆环进度条 */,
 			);
 			name = "进度条";
 			sourceTree = "<group>";
@@ -624,6 +617,26 @@
 			path = coreAnimationUITests;
 			sourceTree = "<group>";
 		};
+		116A84F820287E7E0084C337 /* 进度条列表 */ = {
+			isa = PBXGroup;
+			children = (
+				1135C7582025F5790053B7E8 /* CAProgressController.h */,
+				1135C7592025F5790053B7E8 /* CAProgressController.m */,
+			);
+			name = "进度条列表";
+			sourceTree = "<group>";
+		};
+		116A84F920287E970084C337 /* 圆环进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				116A84FA20287EB60084C337 /* CircleViewController.h */,
+				116A84FB20287EB60084C337 /* CircleViewController.m */,
+				116A84FD20287EF30084C337 /* CircleView.h */,
+				116A84FE20287EF30084C337 /* CircleView.m */,
+			);
+			name = "圆环进度条";
+			sourceTree = "<group>";
+		};
 		117FF9091FE61DE8003F2ADA /* 子类超出父类范围 */ = {
 			isa = PBXGroup;
 			children = (
@@ -953,6 +966,7 @@
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
 				11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */,
+				116A84FC20287EB60084C337 /* CircleViewController.m in Sources */,
 				1148BD7D2019F96C00E8C277 /* threeDTransformController.m in Sources */,
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
@@ -960,9 +974,9 @@
 				1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */,
 				117FF9361FE64EAA003F2ADA /* shadowController.m in Sources */,
 				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
+				116A84FF20287EF30084C337 /* CircleView.m in Sources */,
 				11F9C8CE1FEF96600052515C /* FilterViewController.m in Sources */,
 				117FF91D1FE6310C003F2ADA /* HitScrollView.m in Sources */,
-				112223DD201DC84C00B3DBC0 /* layerListController.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */,

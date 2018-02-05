@@ -132,7 +132,9 @@
                         @"拉伸过滤"],
                       @[@"仿射变换",
                         @"3D变换"],
-                      @[@"贝赛尔曲线和专用图层"],
+                      @[@"贝赛尔曲线基础知识",
+                        @"CAShapeLayer基础知识",
+                        @"进度条总结"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -169,7 +171,9 @@
                               @"FilterViewController"],
                             @[@"AffineTransformController",
                               @"BasicThreeListViewController"],
-                            @[@"layerListController"],
+                            @[@"BezierPathViewController",
+                              @"CAShapeLayerController",
+                              @"CAProgressController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
