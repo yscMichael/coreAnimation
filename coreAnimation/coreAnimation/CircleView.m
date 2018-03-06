@@ -61,13 +61,14 @@
 {
     _progress = progress;
     [CATransaction begin];
-    [CATransaction setDisableActions:YES];
+    [CATransaction setDisableActions:NO];
     [CATransaction setAnimationDuration:1.5];
     [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
 
     //设置进度
     self.trackLayer.strokeEnd = progress;
-    //更新endPoint位置
+    //更新endPoint位置、这里不能实现动画，需要进一步修改
+    //为什么CATransaction不能实现动画呢？？？？
     CGPoint newCenter = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
     newCenter.y += self.arcRadius * sin(M_PI/180 * (360*progress - 90));
     newCenter.x += self.arcRadius * cos(M_PI/180 * (360*progress - 90));

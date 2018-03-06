@@ -69,6 +69,11 @@
     NSArray *sectionArray = self.dataSoure[indexPath.section];
     cell.textLabel.text = sectionArray[indexPath.row];
 
+    if ([cell.textLabel.text isEqualToString:@"进度条总结"])
+    {
+        cell.backgroundColor = [UIColor brownColor];
+    }
+
     return cell;
 }
 
@@ -134,7 +139,8 @@
                         @"3D变换"],
                       @[@"贝赛尔曲线基础知识",
                         @"CAShapeLayer基础知识",
-                        @"进度条总结"],
+                        @"进度条总结",
+                        @"CATextLayer"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -173,7 +179,8 @@
                               @"BasicThreeListViewController"],
                             @[@"BezierPathViewController",
                               @"CAShapeLayerController",
-                              @"CAProgressController"],
+                              @"CAProgressController",
+                              @"TextLayerListController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

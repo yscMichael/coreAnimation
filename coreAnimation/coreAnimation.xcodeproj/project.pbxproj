@@ -65,6 +65,12 @@
 		117FF9431FE658F9003F2ADA /* shadowPathController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9411FE658F9003F2ADA /* shadowPathController.xib */; };
 		117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9461FE6663F003F2ADA /* MaskViewController.m */; };
 		117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9471FE6663F003F2ADA /* MaskViewController.xib */; };
+		11F04F6E204EB3760041610C /* LabelLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F6D204EB3760041610C /* LabelLayerController.m */; };
+		11F04F71204EB4010041610C /* TextLayerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F70204EB4010041610C /* TextLayerListController.m */; };
+		11F04F74204EB4AF0041610C /* AttributeLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F73204EB4AF0041610C /* AttributeLabelController.m */; };
+		11F04F77204EB4E80041610C /* AlternativeLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F76204EB4E80041610C /* AlternativeLabelController.m */; };
+		11F04F7A204EB6060041610C /* LabelLayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F04F79204EB6060041610C /* LabelLayerController.xib */; };
+		11F04F7C204EBB230041610C /* AttributeLabelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F04F7B204EBB230041610C /* AttributeLabelController.xib */; };
 		11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */; };
 		11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */; };
 		11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */; };
@@ -193,6 +199,16 @@
 		117FF9451FE6663F003F2ADA /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		117FF9461FE6663F003F2ADA /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		117FF9471FE6663F003F2ADA /* MaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
+		11F04F6C204EB3760041610C /* LabelLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLayerController.h; sourceTree = "<group>"; };
+		11F04F6D204EB3760041610C /* LabelLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLayerController.m; sourceTree = "<group>"; };
+		11F04F6F204EB4010041610C /* TextLayerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextLayerListController.h; sourceTree = "<group>"; };
+		11F04F70204EB4010041610C /* TextLayerListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextLayerListController.m; sourceTree = "<group>"; };
+		11F04F72204EB4AF0041610C /* AttributeLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributeLabelController.h; sourceTree = "<group>"; };
+		11F04F73204EB4AF0041610C /* AttributeLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributeLabelController.m; sourceTree = "<group>"; };
+		11F04F75204EB4E80041610C /* AlternativeLabelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlternativeLabelController.h; sourceTree = "<group>"; };
+		11F04F76204EB4E80041610C /* AlternativeLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternativeLabelController.m; sourceTree = "<group>"; };
+		11F04F79204EB6060041610C /* LabelLayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelLayerController.xib; sourceTree = "<group>"; };
+		11F04F7B204EBB230041610C /* AttributeLabelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributeLabelController.xib; sourceTree = "<group>"; };
 		11F9C8BE1FEF658C0052515C /* DynamicMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskController.h; sourceTree = "<group>"; };
 		11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskController.m; sourceTree = "<group>"; };
 		11F9C8C31FEF6A890052515C /* TwoMethodsMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoMethodsMoveViewController.h; sourceTree = "<group>"; };
@@ -236,6 +252,7 @@
 				112223E0201DC8AF00B3DBC0 /* CAShapeLayer */,
 				1135C7572025F5680053B7E8 /* 进度条 */,
 				11F04F67204E4E3A0041610C /* CATextLayer */,
+				11F04F6B204EB2F10041610C /* Label富文本总结 */,
 			);
 			name = "专用图层";
 			sourceTree = "<group>";
@@ -740,16 +757,57 @@
 		11F04F67204E4E3A0041610C /* CATextLayer */ = {
 			isa = PBXGroup;
 			children = (
-				11F04F68204E4E4B0041610C /* New Group */,
+				11F04F78204EB51B0041610C /* TextLayer列表 */,
+				11F04F68204E4E4B0041610C /* 实现Label效果 */,
+				11F04F69204EB2B50041610C /* 富文本 */,
+				11F04F6A204EB2BE0041610C /* 替代Label */,
 			);
 			name = CATextLayer;
 			sourceTree = "<group>";
 		};
-		11F04F68204E4E4B0041610C /* New Group */ = {
+		11F04F68204E4E4B0041610C /* 实现Label效果 */ = {
+			isa = PBXGroup;
+			children = (
+				11F04F6C204EB3760041610C /* LabelLayerController.h */,
+				11F04F6D204EB3760041610C /* LabelLayerController.m */,
+				11F04F79204EB6060041610C /* LabelLayerController.xib */,
+			);
+			name = "实现Label效果";
+			sourceTree = "<group>";
+		};
+		11F04F69204EB2B50041610C /* 富文本 */ = {
+			isa = PBXGroup;
+			children = (
+				11F04F72204EB4AF0041610C /* AttributeLabelController.h */,
+				11F04F73204EB4AF0041610C /* AttributeLabelController.m */,
+				11F04F7B204EBB230041610C /* AttributeLabelController.xib */,
+			);
+			name = "富文本";
+			sourceTree = "<group>";
+		};
+		11F04F6A204EB2BE0041610C /* 替代Label */ = {
+			isa = PBXGroup;
+			children = (
+				11F04F75204EB4E80041610C /* AlternativeLabelController.h */,
+				11F04F76204EB4E80041610C /* AlternativeLabelController.m */,
+			);
+			name = "替代Label";
+			sourceTree = "<group>";
+		};
+		11F04F6B204EB2F10041610C /* Label富文本总结 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "New Group";
+			name = "Label富文本总结";
+			sourceTree = "<group>";
+		};
+		11F04F78204EB51B0041610C /* TextLayer列表 */ = {
+			isa = PBXGroup;
+			children = (
+				11F04F6F204EB4010041610C /* TextLayerListController.h */,
+				11F04F70204EB4010041610C /* TextLayerListController.m */,
+			);
+			name = "TextLayer列表";
 			sourceTree = "<group>";
 		};
 		11F9C8BC1FEF64FE0052515C /* 基础例题 */ = {
@@ -927,7 +985,9 @@
 				115AE3021F938CF800989785 /* LaunchScreen.storyboard in Resources */,
 				115AE2FF1F938CF800989785 /* Assets.xcassets in Resources */,
 				117FF9301FE64BF5003F2ADA /* cornerViewController.xib in Resources */,
+				11F04F7A204EB6060041610C /* LabelLayerController.xib in Resources */,
 				115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */,
+				11F04F7C204EBB230041610C /* AttributeLabelController.xib in Resources */,
 				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
 				1148BD7520198E8300E8C277 /* subLayerTransformController.xib in Resources */,
 				117FF9371FE64EAA003F2ADA /* shadowController.xib in Resources */,
@@ -964,6 +1024,7 @@
 			files = (
 				117FF9421FE658F9003F2ADA /* shadowPathController.m in Sources */,
 				117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */,
+				11F04F71204EB4010041610C /* TextLayerListController.m in Sources */,
 				117FF92F1FE64BF5003F2ADA /* cornerViewController.m in Sources */,
 				11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */,
 				115AE2FA1F938CF800989785 /* ViewController.m in Sources */,
@@ -971,8 +1032,10 @@
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
 				115036BD1FD3EBA200A33761 /* ZPositionController.m in Sources */,
 				117FF9291FE638DE003F2ADA /* AutoLayoutController.m in Sources */,
+				11F04F77204EB4E80041610C /* AlternativeLabelController.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
+				11F04F74204EB4AF0041610C /* AttributeLabelController.m in Sources */,
 				1148BD7320198DBC00E8C277 /* subLayerTransformController.m in Sources */,
 				117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
@@ -988,6 +1051,7 @@
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
 				1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */,
+				11F04F6E204EB3760041610C /* LabelLayerController.m in Sources */,
 				117FF9361FE64EAA003F2ADA /* shadowController.m in Sources */,
 				115036AB1FD3AED800A33761 /* AlarmClockController.m in Sources */,
 				116A84FF20287EF30084C337 /* CircleView.m in Sources */,
