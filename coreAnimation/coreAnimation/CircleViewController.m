@@ -48,6 +48,7 @@ static float tempValue = 0.0;
     else
     {
         self.circleView.progress = 0.0;
+        tempValue = 0.0;
     }
 }
 
