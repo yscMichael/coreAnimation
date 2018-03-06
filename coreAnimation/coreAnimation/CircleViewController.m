@@ -23,6 +23,7 @@ static float tempValue = 0.0;
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    tempValue = 0.0;
 
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 300, 100, 50)];
     [button addTarget:self action:@selector(changeProgress:) forControlEvents:UIControlEventTouchUpInside];

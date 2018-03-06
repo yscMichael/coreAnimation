@@ -38,7 +38,7 @@
 #pragma mark - initData
 - (void)initData
 {
-    self.arcRadius = self.frame.size.width > self.frame.size.height ? self.frame.size.height : self.frame.size.width;
+    self.arcRadius = self.frame.size.width / 2.0 > self.frame.size.height / 2.0 ? self.frame.size.height / 2.0 : self.frame.size.width / 2.0;
 }
 
 #pragma mark - initSubview
@@ -68,10 +68,10 @@
     //设置进度
     self.trackLayer.strokeEnd = progress;
     //更新endPoint位置
-//    CGPoint newCenter = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
-//    newCenter.y += self.arcRadius * sin(M_PI/180 * (360*progress - 90));
-//    newCenter.x += self.arcRadius * cos(M_PI/180 * (360*progress - 90));
-//    self.endPointView.center = newCenter;
+    CGPoint newCenter = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+    newCenter.y += self.arcRadius * sin(M_PI/180 * (360*progress - 90));
+    newCenter.x += self.arcRadius * cos(M_PI/180 * (360*progress - 90));
+    self.endPointView.center = newCenter;
 
     [CATransaction commit];
 }

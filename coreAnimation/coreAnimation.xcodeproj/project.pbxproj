@@ -235,6 +235,7 @@
 				112223DE201DC86500B3DBC0 /* 贝赛尔曲线 */,
 				112223E0201DC8AF00B3DBC0 /* CAShapeLayer */,
 				1135C7572025F5680053B7E8 /* 进度条 */,
+				11F04F67204E4E3A0041610C /* CATextLayer */,
 			);
 			name = "专用图层";
 			sourceTree = "<group>";
@@ -734,6 +735,21 @@
 				11F9C8D01FEFBE7C0052515C /* 组透明-当前版本不存在这种情况 */,
 			);
 			name = "图层蒙版";
+			sourceTree = "<group>";
+		};
+		11F04F67204E4E3A0041610C /* CATextLayer */ = {
+			isa = PBXGroup;
+			children = (
+				11F04F68204E4E4B0041610C /* New Group */,
+			);
+			name = CATextLayer;
+			sourceTree = "<group>";
+		};
+		11F04F68204E4E4B0041610C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 		11F9C8BC1FEF64FE0052515C /* 基础例题 */ = {
