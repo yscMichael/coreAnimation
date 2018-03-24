@@ -69,11 +69,6 @@
     NSArray *sectionArray = self.dataSoure[indexPath.section];
     cell.textLabel.text = sectionArray[indexPath.row];
 
-    if ([cell.textLabel.text isEqualToString:@"进度条总结"])
-    {
-        cell.backgroundColor = [UIColor brownColor];
-    }
-
     return cell;
 }
 
