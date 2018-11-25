@@ -12,7 +12,7 @@
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define BarHeight 20
 
-@interface changeOpacityController ()
+@interface changeOpacityController ()<CAAnimationDelegate>
 
 @property (nonatomic,strong) UIView *testView;
 
@@ -40,6 +40,7 @@
 {
     //显示动画－－不会改变layer的内部属性
     CABasicAnimation *fadeAnim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    fadeAnim.delegate = self;
     fadeAnim.fromValue = [NSNumber numberWithFloat:1.0];
     fadeAnim.toValue = [NSNumber numberWithFloat:0.0];
     fadeAnim.duration = 3.0;
@@ -51,12 +52,12 @@
 #pragma mark - CAAnimationDelegate
 - (void)animationDidStart:(CAAnimation *)anim
 {
-
+    NSLog(@"DidStart");
 }
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
 {
-    
+    NSLog(@"DidStop");
 }
 
 

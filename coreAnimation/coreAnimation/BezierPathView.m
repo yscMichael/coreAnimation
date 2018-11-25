@@ -81,7 +81,7 @@
     [[UIColor greenColor] setStroke];
     [[UIColor redColor] setFill];
     [path stroke];
-    //[path fill];
+    [path fill];
 }
 
 #pragma mark - 弧形
@@ -122,7 +122,7 @@
     [[UIColor greenColor] setStroke];
     [[UIColor redColor] setFill];
     [path stroke];
-    //[path fill];
+    [path fill];
 }
 
 #pragma mark - 绘制三次曲线

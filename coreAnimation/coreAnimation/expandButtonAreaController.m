@@ -8,6 +8,7 @@
 
 #import "expandButtonAreaController.h"
 #import "HWButton.h"
+#import "UIButton+ExpandArea.h"
 
 @interface expandButtonAreaController ()
 
@@ -26,7 +27,7 @@
     coverView.layer.borderWidth = 1.0;
     [self.view addSubview:coverView];
 
-    HWButton *button = [[HWButton alloc]initWithFrame:CGRectMake(100, 200, 100, 100)];
+    UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 100, 100)];
     button.hitTestEdgeInsets = UIEdgeInsetsMake(-50, -50, -50, -50);
     [button setTitle:@"点我呀" forState:UIControlStateNormal];
     [button setTitle:@"点中了" forState:UIControlStateHighlighted];

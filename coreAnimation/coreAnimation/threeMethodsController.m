@@ -51,13 +51,15 @@
 #pragma mark - UIView代码块调用
 - (void)animateWithDurationMethod
 {
-    self.animationView.frame = CGRectMake(0, 64, 50, 50);
-    [UIView animateWithDuration:5.0 animations:^{
+    [self viewZoomAnimation];
 
-        self.animationView.frame = CGRectMake(0, ScreenHeight - 50, 50, 50);
-    } completion:^(BOOL finished) {
-        self.animationView.frame = CGRectMake(0, ScreenHeight / 2.0 - 50, 50, 50);
-    }];
+//    self.animationView.frame = CGRectMake(0, 64, 50, 50);
+//    [UIView animateWithDuration:5.0 animations:^{
+//
+//        self.animationView.frame = CGRectMake(0, ScreenHeight - 50, 50, 50);
+//    } completion:^(BOOL finished) {
+//        self.animationView.frame = CGRectMake(0, ScreenHeight / 2.0 - 50, 50, 50);
+//    }];
 }
 
 #pragma mark - UIView[begin commit]模式
@@ -81,6 +83,20 @@
     animation.fillMode = kCAFillModeForwards;
     animation.removedOnCompletion = NO;
     [self.animationView.layer addAnimation:animation forKey:@"positionAnimation"];
+}
+
+#pragma mark - 缩放动画
+- (void)viewZoomAnimation
+{
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    animation.fromValue = [NSNumber numberWithFloat:1.0];
+    animation.toValue = [NSNumber numberWithFloat:2.0];
+    animation.duration = 0.5;
+    animation.autoreverses = NO;
+    animation.repeatCount = 0;
+    animation.removedOnCompletion = NO;
+    animation.fillMode = kCAFillModeForwards;
+    [self.animationView.layer addAnimation:animation forKey:@"zoom"];
 }
 
 #pragma mark - Getters And Setters

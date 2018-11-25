@@ -53,7 +53,7 @@
     touchLabel.text = @"利用touch滑动";
     touchLabel.center = CGPointMake(75, 50);
     [self.touchView addSubview:touchLabel];
-    [self.view addSubview:self.touchView];
+//    [self.view addSubview:self.touchView];
 }
 
 #pragma mark - 手势方法
@@ -61,6 +61,10 @@
 {
     //1、手势在self.view坐标系中移动的位置
     CGPoint translation = [recognizer translationInView:self.view];
+
+    NSLog(@"translation.x = %f",translation.x);
+    NSLog(@"translation.y = %f",translation.y);
+
     CGPoint newCenter = CGPointMake(recognizer.view.center.x + translation.x,
                                     recognizer.view.center.y + translation.y);
     //2、限制屏幕范围：
@@ -79,7 +83,7 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [super touchesBegan:touches withEvent:event];
-    self.isMove = NO;
+    self.isMove = YES;
     UITouch *touch = [touches anyObject];
     //1、点击位置在self.view中的位置
     CGPoint point = [touch locationInView:self.view];
