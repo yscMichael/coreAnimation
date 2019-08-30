@@ -137,7 +137,8 @@
                         @"进度条总结",
                         @"CATextLayer",
                         @"CATransformLayer",
-                        @"CAGradientLayer"],
+                        @"CAGradientLayer",
+                        @"CAReplicatorLayer"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -179,7 +180,8 @@
                               @"CAProgressController",
                               @"TextLayerListController",
                               @"CATransformLayerController",
-                              @"CAGradientLayerController"],
+                              @"CAGradientLayerController",
+                              @"CAReplicatorLayerController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

@@ -73,6 +73,9 @@
 		11F04F7A204EB6060041610C /* LabelLayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F04F79204EB6060041610C /* LabelLayerController.xib */; };
 		11F04F7C204EBB230041610C /* AttributeLabelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F04F7B204EBB230041610C /* AttributeLabelController.xib */; };
 		11F1111A2318D28E008C29EC /* CAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F111192318D28E008C29EC /* CAGradientLayerController.m */; };
+		11F1111E2318F39D008C29EC /* CAReplicatorLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F1111D2318F39D008C29EC /* CAReplicatorLayerController.m */; };
+		11F111232318FE2D008C29EC /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F111222318FE2D008C29EC /* ReflectionView.m */; };
+		11F111272318FE52008C29EC /* ReflectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F111262318FE52008C29EC /* ReflectionView.xib */; };
 		11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */; };
 		11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */; };
 		11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */; };
@@ -215,6 +218,11 @@
 		11F04F7B204EBB230041610C /* AttributeLabelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributeLabelController.xib; sourceTree = "<group>"; };
 		11F111182318D28E008C29EC /* CAGradientLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerController.h; sourceTree = "<group>"; };
 		11F111192318D28E008C29EC /* CAGradientLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerController.m; sourceTree = "<group>"; };
+		11F1111C2318F39D008C29EC /* CAReplicatorLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAReplicatorLayerController.h; sourceTree = "<group>"; };
+		11F1111D2318F39D008C29EC /* CAReplicatorLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAReplicatorLayerController.m; sourceTree = "<group>"; };
+		11F111212318FE2D008C29EC /* ReflectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		11F111222318FE2D008C29EC /* ReflectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
+		11F111262318FE52008C29EC /* ReflectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReflectionView.xib; sourceTree = "<group>"; };
 		11F9C8BE1FEF658C0052515C /* DynamicMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskController.h; sourceTree = "<group>"; };
 		11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskController.m; sourceTree = "<group>"; };
 		11F9C8C31FEF6A890052515C /* TwoMethodsMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoMethodsMoveViewController.h; sourceTree = "<group>"; };
@@ -270,6 +278,7 @@
 				11F04F6B204EB2F10041610C /* Label富文本总结 */,
 				110C79572318AA8A0020AA48 /* CATransformLayer */,
 				11F111172318D275008C29EC /* CAGradientLayer */,
+				11F1111B2318F384008C29EC /* CAReplicatorLayer */,
 			);
 			name = "专用图层";
 			sourceTree = "<group>";
@@ -836,6 +845,34 @@
 			name = CAGradientLayer;
 			sourceTree = "<group>";
 		};
+		11F1111B2318F384008C29EC /* CAReplicatorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				11F1111F2318FE03008C29EC /* Controller */,
+				11F111202318FE0C008C29EC /* View */,
+			);
+			name = CAReplicatorLayer;
+			sourceTree = "<group>";
+		};
+		11F1111F2318FE03008C29EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11F1111C2318F39D008C29EC /* CAReplicatorLayerController.h */,
+				11F1111D2318F39D008C29EC /* CAReplicatorLayerController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11F111202318FE0C008C29EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11F111212318FE2D008C29EC /* ReflectionView.h */,
+				11F111222318FE2D008C29EC /* ReflectionView.m */,
+				11F111262318FE52008C29EC /* ReflectionView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		11F9C8BC1FEF64FE0052515C /* 基础例题 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1015,6 +1052,7 @@
 				11F04F7A204EB6060041610C /* LabelLayerController.xib in Resources */,
 				115036C31FD3F32200A33761 /* HitTestingController.xib in Resources */,
 				11F04F7C204EBB230041610C /* AttributeLabelController.xib in Resources */,
+				11F111272318FE52008C29EC /* ReflectionView.xib in Resources */,
 				115036AC1FD3AED800A33761 /* AlarmClockController.xib in Resources */,
 				1148BD7520198E8300E8C277 /* subLayerTransformController.xib in Resources */,
 				117FF9371FE64EAA003F2ADA /* shadowController.xib in Resources */,
@@ -1086,6 +1124,7 @@
 				116A84FF20287EF30084C337 /* CircleView.m in Sources */,
 				11F9C8CE1FEF96600052515C /* FilterViewController.m in Sources */,
 				117FF91D1FE6310C003F2ADA /* HitScrollView.m in Sources */,
+				11F111232318FE2D008C29EC /* ReflectionView.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */,
@@ -1093,6 +1132,7 @@
 				117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */,
 				112223DA201DC80200B3DBC0 /* BezierPathViewController.m in Sources */,
 				1148BD792019CA3A00E8C277 /* InAndOutViewController.m in Sources */,
+				11F1111E2318F39D008C29EC /* CAReplicatorLayerController.m in Sources */,
 				117FF9081FE61522003F2ADA /* HWButton.m in Sources */,
 				117FF9211FE63130003F2ADA /* scrollViewPreviewController.m in Sources */,
 				1151755B1FAEECE70076F7F6 /* LayerCreateController.m in Sources */,
