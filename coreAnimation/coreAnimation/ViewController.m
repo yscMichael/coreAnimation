@@ -135,7 +135,8 @@
                       @[@"贝赛尔曲线基础知识",
                         @"CAShapeLayer基础知识",
                         @"进度条总结",
-                        @"CATextLayer"],
+                        @"CATextLayer",
+                        @"CATransformLayer"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -175,7 +176,8 @@
                             @[@"BezierPathViewController",
                               @"CAShapeLayerController",
                               @"CAProgressController",
-                              @"TextLayerListController"],
+                              @"TextLayerListController",
+                              @"CATransformLayerController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }
