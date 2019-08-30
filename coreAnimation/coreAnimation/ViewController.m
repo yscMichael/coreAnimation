@@ -136,7 +136,8 @@
                         @"CAShapeLayer基础知识",
                         @"进度条总结",
                         @"CATextLayer",
-                        @"CATransformLayer"],
+                        @"CATransformLayer",
+                        @"CAGradientLayer"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -177,7 +178,8 @@
                               @"CAShapeLayerController",
                               @"CAProgressController",
                               @"TextLayerListController",
-                              @"CATransformLayerController"],
+                              @"CATransformLayerController",
+                              @"CAGradientLayerController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

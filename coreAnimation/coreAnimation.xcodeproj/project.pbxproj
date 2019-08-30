@@ -72,6 +72,7 @@
 		11F04F77204EB4E80041610C /* AlternativeLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F76204EB4E80041610C /* AlternativeLabelController.m */; };
 		11F04F7A204EB6060041610C /* LabelLayerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F04F79204EB6060041610C /* LabelLayerController.xib */; };
 		11F04F7C204EBB230041610C /* AttributeLabelController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F04F7B204EBB230041610C /* AttributeLabelController.xib */; };
+		11F1111A2318D28E008C29EC /* CAGradientLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F111192318D28E008C29EC /* CAGradientLayerController.m */; };
 		11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */; };
 		11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */; };
 		11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */; };
@@ -212,6 +213,8 @@
 		11F04F76204EB4E80041610C /* AlternativeLabelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlternativeLabelController.m; sourceTree = "<group>"; };
 		11F04F79204EB6060041610C /* LabelLayerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelLayerController.xib; sourceTree = "<group>"; };
 		11F04F7B204EBB230041610C /* AttributeLabelController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributeLabelController.xib; sourceTree = "<group>"; };
+		11F111182318D28E008C29EC /* CAGradientLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAGradientLayerController.h; sourceTree = "<group>"; };
+		11F111192318D28E008C29EC /* CAGradientLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAGradientLayerController.m; sourceTree = "<group>"; };
 		11F9C8BE1FEF658C0052515C /* DynamicMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskController.h; sourceTree = "<group>"; };
 		11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskController.m; sourceTree = "<group>"; };
 		11F9C8C31FEF6A890052515C /* TwoMethodsMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoMethodsMoveViewController.h; sourceTree = "<group>"; };
@@ -266,6 +269,7 @@
 				11F04F67204E4E3A0041610C /* CATextLayer */,
 				11F04F6B204EB2F10041610C /* Label富文本总结 */,
 				110C79572318AA8A0020AA48 /* CATransformLayer */,
+				11F111172318D275008C29EC /* CAGradientLayer */,
 			);
 			name = "专用图层";
 			sourceTree = "<group>";
@@ -823,6 +827,15 @@
 			name = "TextLayer列表";
 			sourceTree = "<group>";
 		};
+		11F111172318D275008C29EC /* CAGradientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				11F111182318D28E008C29EC /* CAGradientLayerController.h */,
+				11F111192318D28E008C29EC /* CAGradientLayerController.m */,
+			);
+			name = CAGradientLayer;
+			sourceTree = "<group>";
+		};
 		11F9C8BC1FEF64FE0052515C /* 基础例题 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1047,6 +1060,7 @@
 				115036BD1FD3EBA200A33761 /* ZPositionController.m in Sources */,
 				117FF9291FE638DE003F2ADA /* AutoLayoutController.m in Sources */,
 				11F04F77204EB4E80041610C /* AlternativeLabelController.m in Sources */,
+				11F1111A2318D28E008C29EC /* CAGradientLayerController.m in Sources */,
 				115AE2F41F938CF800989785 /* main.m in Sources */,
 				115175651FAF45C70076F7F6 /* SplitImageController.m in Sources */,
 				110C795A2318AAB10020AA48 /* CATransformLayerController.m in Sources */,
