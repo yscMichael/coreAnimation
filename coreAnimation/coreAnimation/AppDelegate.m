@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "fallingSnowViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,9 @@
     ViewController *viewCtrl = [[ViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewCtrl];
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-    self.window.rootViewController = nav;
+
+    fallingSnowViewController *fallingCtrl = [[fallingSnowViewController alloc] init];
+    self.window.rootViewController = fallingCtrl;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 

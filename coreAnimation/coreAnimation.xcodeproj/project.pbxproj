@@ -66,6 +66,7 @@
 		117FF9431FE658F9003F2ADA /* shadowPathController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9411FE658F9003F2ADA /* shadowPathController.xib */; };
 		117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9461FE6663F003F2ADA /* MaskViewController.m */; };
 		117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9471FE6663F003F2ADA /* MaskViewController.xib */; };
+		1196EFD923A51E1E00BCD5FB /* fallingSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1196EFD823A51E1E00BCD5FB /* fallingSnowViewController.m */; };
 		11F04F6E204EB3760041610C /* LabelLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F6D204EB3760041610C /* LabelLayerController.m */; };
 		11F04F71204EB4010041610C /* TextLayerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F70204EB4010041610C /* TextLayerListController.m */; };
 		11F04F74204EB4AF0041610C /* AttributeLabelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F73204EB4AF0041610C /* AttributeLabelController.m */; };
@@ -208,6 +209,9 @@
 		117FF9451FE6663F003F2ADA /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		117FF9461FE6663F003F2ADA /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		117FF9471FE6663F003F2ADA /* MaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
+		1196EFD723A51E1E00BCD5FB /* fallingSnowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fallingSnowViewController.h; sourceTree = "<group>"; };
+		1196EFD823A51E1E00BCD5FB /* fallingSnowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fallingSnowViewController.m; sourceTree = "<group>"; };
+		1196EFDA23A5217600BCD5FB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		11F04F6C204EB3760041610C /* LabelLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelLayerController.h; sourceTree = "<group>"; };
 		11F04F6D204EB3760041610C /* LabelLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelLayerController.m; sourceTree = "<group>"; };
 		11F04F6F204EB4010041610C /* TextLayerListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextLayerListController.h; sourceTree = "<group>"; };
@@ -623,6 +627,7 @@
 		115AE2F11F938CF800989785 /* coreAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				1196EFD523A51DC300BCD5FB /* 动画实例 */,
 				115036A21FD3A27300A33761 /* AppDelegate */,
 				115036A01FD3A11F00A33761 /* MainController */,
 				1148BDE41FCAA0D40021375B /* 图层树 */,
@@ -633,10 +638,7 @@
 				112223D7201DC78B00B3DBC0 /* 专用图层 */,
 				115036A71FD3AC8B00A33761 /* 动画制作方式 */,
 				115036A61FD3AC8500A33761 /* 动画和layer属性关系 */,
-				115AE2FB1F938CF800989785 /* Main.storyboard */,
-				115AE2FE1F938CF800989785 /* Assets.xcassets */,
-				115AE3001F938CF800989785 /* LaunchScreen.storyboard */,
-				115AE3031F938CF800989785 /* Info.plist */,
+				1196EFDB23A521E200BCD5FB /* otherFiles */,
 				115AE2F21F938CF800989785 /* Supporting Files */,
 			);
 			path = coreAnimation;
@@ -785,6 +787,35 @@
 				11F9C8D01FEFBE7C0052515C /* 组透明-当前版本不存在这种情况 */,
 			);
 			name = "图层蒙版";
+			sourceTree = "<group>";
+		};
+		1196EFD523A51DC300BCD5FB /* 动画实例 */ = {
+			isa = PBXGroup;
+			children = (
+				1196EFD623A51DD700BCD5FB /* 飘落的雪花 */,
+			);
+			name = "动画实例";
+			sourceTree = "<group>";
+		};
+		1196EFD623A51DD700BCD5FB /* 飘落的雪花 */ = {
+			isa = PBXGroup;
+			children = (
+				1196EFD723A51E1E00BCD5FB /* fallingSnowViewController.h */,
+				1196EFD823A51E1E00BCD5FB /* fallingSnowViewController.m */,
+			);
+			name = "飘落的雪花";
+			sourceTree = "<group>";
+		};
+		1196EFDB23A521E200BCD5FB /* otherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1196EFDA23A5217600BCD5FB /* PrefixHeader.pch */,
+				115AE2FB1F938CF800989785 /* Main.storyboard */,
+				115AE2FE1F938CF800989785 /* Assets.xcassets */,
+				115AE3001F938CF800989785 /* LaunchScreen.storyboard */,
+				115AE3031F938CF800989785 /* Info.plist */,
+			);
+			name = otherFiles;
 			sourceTree = "<group>";
 		};
 		11F04F67204E4E3A0041610C /* CATextLayer */ = {
@@ -1140,6 +1171,7 @@
 				1148BD7320198DBC00E8C277 /* subLayerTransformController.m in Sources */,
 				117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */,
 				1150369F1FD3A10300A33761 /* redrawViewController.m in Sources */,
+				1196EFD923A51E1E00BCD5FB /* fallingSnowViewController.m in Sources */,
 				1148BD6D2019865A00E8C277 /* BasicThreeListViewController.m in Sources */,
 				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
 				1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */,
@@ -1322,6 +1354,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59PVTAC458;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/coreAnimation/PrefixHeader.pch";
 				INFOPLIST_FILE = coreAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
@@ -1334,6 +1368,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 59PVTAC458;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/coreAnimation/PrefixHeader.pch";
 				INFOPLIST_FILE = coreAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
