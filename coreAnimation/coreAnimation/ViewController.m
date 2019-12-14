@@ -138,7 +138,8 @@
                         @"CATextLayer",
                         @"CATransformLayer",
                         @"CAGradientLayer",
-                        @"CAReplicatorLayer"],
+                        @"CAReplicatorLayer",
+                        @"CAScrollLayer"],
                       @[@"UIView制作动画的三种方式"],
                       @[@"UIView更改透明度"], nil];
     }
@@ -181,7 +182,8 @@
                               @"TextLayerListController",
                               @"CATransformLayerController",
                               @"CAGradientLayerController",
-                              @"CAReplicatorLayerController"],
+                              @"CAReplicatorLayerController",
+                              @"CAScrollLayerController"],
                             @[@"threeMethodsController"],
                             @[@"changeOpacityController"],nil];
     }

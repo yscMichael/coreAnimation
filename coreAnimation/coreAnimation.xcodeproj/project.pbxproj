@@ -76,6 +76,8 @@
 		11F1111E2318F39D008C29EC /* CAReplicatorLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F1111D2318F39D008C29EC /* CAReplicatorLayerController.m */; };
 		11F111232318FE2D008C29EC /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F111222318FE2D008C29EC /* ReflectionView.m */; };
 		11F111272318FE52008C29EC /* ReflectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F111262318FE52008C29EC /* ReflectionView.xib */; };
+		11F1112E23190287008C29EC /* CAScrollLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F1112D23190287008C29EC /* CAScrollLayerController.m */; };
+		11F11133231906DD008C29EC /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F11132231906DD008C29EC /* ScrollView.m */; };
 		11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */; };
 		11F9C8C51FEF6A890052515C /* TwoMethodsMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C41FEF6A890052515C /* TwoMethodsMoveViewController.m */; };
 		11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F9C8C81FEF87B80052515C /* DynamicMaskImprovedController.m */; };
@@ -223,6 +225,10 @@
 		11F111212318FE2D008C29EC /* ReflectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
 		11F111222318FE2D008C29EC /* ReflectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 		11F111262318FE52008C29EC /* ReflectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReflectionView.xib; sourceTree = "<group>"; };
+		11F1112C23190287008C29EC /* CAScrollLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAScrollLayerController.h; sourceTree = "<group>"; };
+		11F1112D23190287008C29EC /* CAScrollLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAScrollLayerController.m; sourceTree = "<group>"; };
+		11F11131231906DD008C29EC /* ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollView.h; sourceTree = "<group>"; };
+		11F11132231906DD008C29EC /* ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
 		11F9C8BE1FEF658C0052515C /* DynamicMaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicMaskController.h; sourceTree = "<group>"; };
 		11F9C8BF1FEF658C0052515C /* DynamicMaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicMaskController.m; sourceTree = "<group>"; };
 		11F9C8C31FEF6A890052515C /* TwoMethodsMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoMethodsMoveViewController.h; sourceTree = "<group>"; };
@@ -279,6 +285,7 @@
 				110C79572318AA8A0020AA48 /* CATransformLayer */,
 				11F111172318D275008C29EC /* CAGradientLayer */,
 				11F1111B2318F384008C29EC /* CAReplicatorLayer */,
+				11F11128231901D3008C29EC /* CAScrollLayer */,
 			);
 			name = "专用图层";
 			sourceTree = "<group>";
@@ -873,6 +880,33 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		11F11128231901D3008C29EC /* CAScrollLayer */ = {
+			isa = PBXGroup;
+			children = (
+				11F1112F23190390008C29EC /* Controller */,
+				11F111302319039A008C29EC /* View */,
+			);
+			name = CAScrollLayer;
+			sourceTree = "<group>";
+		};
+		11F1112F23190390008C29EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11F1112C23190287008C29EC /* CAScrollLayerController.h */,
+				11F1112D23190287008C29EC /* CAScrollLayerController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11F111302319039A008C29EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11F11131231906DD008C29EC /* ScrollView.h */,
+				11F11132231906DD008C29EC /* ScrollView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		11F9C8BC1FEF64FE0052515C /* 基础例题 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1111,10 +1145,12 @@
 				1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */,
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
+				11F1112E23190287008C29EC /* CAScrollLayerController.m in Sources */,
 				11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */,
 				116A84FC20287EB60084C337 /* CircleViewController.m in Sources */,
 				1148BD7D2019F96C00E8C277 /* threeDTransformController.m in Sources */,
 				115036C21FD3F32200A33761 /* HitTestingController.m in Sources */,
+				11F11133231906DD008C29EC /* ScrollView.m in Sources */,
 				115036B51FD3B46800A33761 /* ChangeAnchorPointController.m in Sources */,
 				1150369C1FD3A0DB00A33761 /* stretchViewController.m in Sources */,
 				1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */,
