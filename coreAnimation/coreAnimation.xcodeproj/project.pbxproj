@@ -10,6 +10,8 @@
 		110C795A2318AAB10020AA48 /* CATransformLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110C79592318AAB10020AA48 /* CATransformLayerController.m */; };
 		112223DA201DC80200B3DBC0 /* BezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112223D9201DC80200B3DBC0 /* BezierPathViewController.m */; };
 		1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135C7592025F5790053B7E8 /* CAProgressController.m */; };
+		113BCAE623A5E48700E4F169 /* TaijiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113BCAE523A5E48700E4F169 /* TaijiViewController.m */; };
+		113BCAEB23A5E7FC00E4F169 /* TaijiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 113BCAEA23A5E7FC00E4F169 /* TaijiView.m */; };
 		1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6420197EB400E8C277 /* AffineTransformController.m */; };
 		1148BD6A2019864100E8C277 /* BasicThreeDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD692019864100E8C277 /* BasicThreeDViewController.m */; };
 		1148BD6D2019865A00E8C277 /* BasicThreeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148BD6C2019865A00E8C277 /* BasicThreeListViewController.m */; };
@@ -110,6 +112,10 @@
 		112223D9201DC80200B3DBC0 /* BezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathViewController.m; sourceTree = "<group>"; };
 		1135C7582025F5790053B7E8 /* CAProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProgressController.h; sourceTree = "<group>"; };
 		1135C7592025F5790053B7E8 /* CAProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAProgressController.m; sourceTree = "<group>"; };
+		113BCAE423A5E48700E4F169 /* TaijiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaijiViewController.h; sourceTree = "<group>"; };
+		113BCAE523A5E48700E4F169 /* TaijiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaijiViewController.m; sourceTree = "<group>"; };
+		113BCAE923A5E7FC00E4F169 /* TaijiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaijiView.h; sourceTree = "<group>"; };
+		113BCAEA23A5E7FC00E4F169 /* TaijiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaijiView.m; sourceTree = "<group>"; };
 		1148BD6320197EB400E8C277 /* AffineTransformController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffineTransformController.h; sourceTree = "<group>"; };
 		1148BD6420197EB400E8C277 /* AffineTransformController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffineTransformController.m; sourceTree = "<group>"; };
 		1148BD682019864100E8C277 /* BasicThreeDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicThreeDViewController.h; sourceTree = "<group>"; };
@@ -321,6 +327,33 @@
 				116A84F920287E970084C337 /* 圆环进度条 */,
 			);
 			name = "进度条";
+			sourceTree = "<group>";
+		};
+		113BCAE323A5E41D00E4F169 /* 自动旋转的太极 */ = {
+			isa = PBXGroup;
+			children = (
+				113BCAE723A5E7D900E4F169 /* Controller */,
+				113BCAE823A5E7E400E4F169 /* View */,
+			);
+			name = "自动旋转的太极";
+			sourceTree = "<group>";
+		};
+		113BCAE723A5E7D900E4F169 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				113BCAE423A5E48700E4F169 /* TaijiViewController.h */,
+				113BCAE523A5E48700E4F169 /* TaijiViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		113BCAE823A5E7E400E4F169 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				113BCAE923A5E7FC00E4F169 /* TaijiView.h */,
+				113BCAEA23A5E7FC00E4F169 /* TaijiView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		1148BD6620197FC900E8C277 /* 仿射变换 */ = {
@@ -793,6 +826,7 @@
 			isa = PBXGroup;
 			children = (
 				1196EFD623A51DD700BCD5FB /* 飘落的雪花 */,
+				113BCAE323A5E41D00E4F169 /* 自动旋转的太极 */,
 			);
 			name = "动画实例";
 			sourceTree = "<group>";
@@ -1176,6 +1210,7 @@
 				117FF90F1FE61F17003F2ADA /* HitTestView.m in Sources */,
 				1148BD6520197EB400E8C277 /* AffineTransformController.m in Sources */,
 				117FF93C1FE65435003F2ADA /* shadowTailoringController.m in Sources */,
+				113BCAE623A5E48700E4F169 /* TaijiViewController.m in Sources */,
 				117FF9051FE61501003F2ADA /* UIButton+ExpandArea.m in Sources */,
 				11F1112E23190287008C29EC /* CAScrollLayerController.m in Sources */,
 				11F9C8C01FEF658C0052515C /* DynamicMaskController.m in Sources */,
@@ -1195,6 +1230,7 @@
 				11F111232318FE2D008C29EC /* ReflectionView.m in Sources */,
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
+				113BCAEB23A5E7FC00E4F169 /* TaijiView.m in Sources */,
 				1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */,
 				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
 				117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */,

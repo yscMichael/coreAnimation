@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "fallingSnowViewController.h"
+#import "TaijiViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,8 +24,10 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewCtrl];
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
 
-    fallingSnowViewController *fallingCtrl = [[fallingSnowViewController alloc] init];
-    self.window.rootViewController = fallingCtrl;
+    //fallingSnowViewController *fallingCtrl = [[fallingSnowViewController alloc] init];
+    TaijiViewController *taijiViewCtrl = [[TaijiViewController alloc] init];
+
+    self.window.rootViewController = taijiViewCtrl;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
