@@ -56,8 +56,6 @@
     CGColorRef whiteColor = [[UIColor colorWithRed:1 green:1 blue:1 alpha:1.0] CGColor];
     CGColorRef blackColor = [[UIColor colorWithRed:0 green:0 blue:0 alpha:1.0] CGColor];
 
-    //4.3、绘制底部白色半圆
-    CGContextSetFillColor(context, CGColorGetComponents(whiteColor));
     //0:顺时针 1:逆时针(苹果文档感觉有误)
     //坐标系右下为正、左上为负
     //        -M_PI_2
@@ -67,42 +65,43 @@
     //          |
     //          |
     //        M_PI_2
-    CGContextAddArc(context, x, y, radius, 0, M_PI, 0);
-    CGContextClosePath(context);
-    CGContextFillPath(context);
-
-    //4.4、绘制上面黑色半圆
-    CGContextSetFillColor(context, CGColorGetComponents(blackColor));
-    CGContextAddArc(context, x, y, radius, M_PI, M_PI * 2, 0);
-    CGContextClosePath(context);
-    CGContextFillPath(context);
-
-    //4.5、绘制右边的小白色半圆
+    //4.3、绘制底部白色半圆(圆心不变、弧度改变--runAngle)
     CGContextSetFillColor(context, CGColorGetComponents(whiteColor));
-    CGContextAddArc(context, x + (radius / 2.0), y, radius / 2.0, M_PI, M_PI * 2, 0);
+    CGContextAddArc(context, x, y, radius, 0 + runAngle, M_PI + runAngle, 0);
     CGContextClosePath(context);
     CGContextFillPath(context);
 
-    //4.6、绘制左边的小黑色半圆
+    //4.4、绘制上面黑色半圆(圆心不变、弧度改变--runAngle)
     CGContextSetFillColor(context, CGColorGetComponents(blackColor));
-    CGContextAddArc(context, x - (radius / 2.0), y, radius / 2.0, 0, M_PI, 0);
+    CGContextAddArc(context, x, y, radius, M_PI + runAngle, M_PI * 2 + runAngle, 0);
     CGContextClosePath(context);
     CGContextFillPath(context);
 
-    //4.7、绘制左边的完整小白色圆
+    //4.5、绘制右边的小白色半圆(圆心位置改变--cos(runAngle)/sin(runAngle)、弧度变--runAngle)
     CGContextSetFillColor(context, CGColorGetComponents(whiteColor));
-    CGContextAddArc(context, x - (radius / 2.0), y, radius / 4.0, 0, M_PI * 2, 0);
+    CGContextAddArc(context, x + (radius / 2.0) * cos(runAngle), y + (radius / 2.0) * sin(runAngle), radius / 2.0, M_PI + runAngle, M_PI * 2 + runAngle, 0);
     CGContextClosePath(context);
     CGContextFillPath(context);
 
-    //4.8、绘制右边的完整小黑色圆
+    //4.6、绘制左边的小黑色半圆(圆心位置改变--cos(runAngle)/sin(runAngle)、弧度变--runAngle)
     CGContextSetFillColor(context, CGColorGetComponents(blackColor));
-    CGContextAddArc(context, x + (radius / 2.0), y, radius / 4.0, 0, M_PI * 2, 0);
+    CGContextAddArc(context, x - (radius / 2.0) * cos(runAngle), y - (radius / 2.0) * sin(runAngle), radius / 2.0, 0 + runAngle, M_PI + runAngle, 0);
     CGContextClosePath(context);
     CGContextFillPath(context);
 
+    //4.7、绘制左边的完整小白色圆(圆心位置改变--cos(runAngle)/sin(runAngle)、弧度不变)
+    CGContextSetFillColor(context, CGColorGetComponents(whiteColor));
+    CGContextAddArc(context, x - (radius / 2.0) * cos(runAngle), y - (radius / 2.0) * sin(runAngle), radius / 4.0, 0, M_PI * 2, 0);
+    CGContextClosePath(context);
+    CGContextFillPath(context);
 
+    //4.8、绘制右边的完整小黑色圆(圆心位置改变--cos(runAngle)/sin(runAngle)、弧度不变)
+    CGContextSetFillColor(context, CGColorGetComponents(blackColor));
+    CGContextAddArc(context, x + (radius / 2.0) * cos(runAngle), y + (radius / 2.0) * sin(runAngle), radius / 4.0, 0, M_PI * 2, 0);
+    CGContextClosePath(context);
+    CGContextFillPath(context);
 
+    //4.9、去除右侧小半圆黑色线(因为封闭path引起的)
 }
 
 
