@@ -356,6 +356,13 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		113BCAEC23A66BDA00E4F169 /* 礼花效果 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "礼花效果";
+			sourceTree = "<group>";
+		};
 		1148BD6620197FC900E8C277 /* 仿射变换 */ = {
 			isa = PBXGroup;
 			children = (
@@ -827,6 +834,7 @@
 			children = (
 				1196EFD623A51DD700BCD5FB /* 飘落的雪花 */,
 				113BCAE323A5E41D00E4F169 /* 自动旋转的太极 */,
+				113BCAEC23A66BDA00E4F169 /* 礼花效果 */,
 			);
 			name = "动画实例";
 			sourceTree = "<group>";

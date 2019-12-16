@@ -22,7 +22,7 @@
     if (self) {
         self.currentIndex = 0.0;
         self.backgroundColor = [UIColor lightGrayColor];
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateSpotlight) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0/32.0 target:self selector:@selector(updateSpotlight) userInfo:nil repeats:YES];
     }
     return self;
 }
