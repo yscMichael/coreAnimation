@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		110C795A2318AAB10020AA48 /* CATransformLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110C79592318AAB10020AA48 /* CATransformLayerController.m */; };
+		1116A97623D83DD700775666 /* RainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1116A97523D83DD700775666 /* RainViewController.m */; };
 		112223DA201DC80200B3DBC0 /* BezierPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112223D9201DC80200B3DBC0 /* BezierPathViewController.m */; };
 		1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1135C7592025F5790053B7E8 /* CAProgressController.m */; };
 		113BCAE623A5E48700E4F169 /* TaijiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113BCAE523A5E48700E4F169 /* TaijiViewController.m */; };
@@ -109,6 +110,8 @@
 /* Begin PBXFileReference section */
 		110C79582318AAB10020AA48 /* CATransformLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CATransformLayerController.h; sourceTree = "<group>"; };
 		110C79592318AAB10020AA48 /* CATransformLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CATransformLayerController.m; sourceTree = "<group>"; };
+		1116A97423D83DD700775666 /* RainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RainViewController.h; sourceTree = "<group>"; };
+		1116A97523D83DD700775666 /* RainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RainViewController.m; sourceTree = "<group>"; };
 		112223D8201DC80200B3DBC0 /* BezierPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathViewController.h; sourceTree = "<group>"; };
 		112223D9201DC80200B3DBC0 /* BezierPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathViewController.m; sourceTree = "<group>"; };
 		1135C7582025F5790053B7E8 /* CAProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAProgressController.h; sourceTree = "<group>"; };
@@ -285,6 +288,15 @@
 				110C79592318AAB10020AA48 /* CATransformLayerController.m */,
 			);
 			name = CATransformLayer;
+			sourceTree = "<group>";
+		};
+		1116A97323D83DA800775666 /* 下雨效果 */ = {
+			isa = PBXGroup;
+			children = (
+				1116A97423D83DD700775666 /* RainViewController.h */,
+				1116A97523D83DD700775666 /* RainViewController.m */,
+			);
+			name = "下雨效果";
 			sourceTree = "<group>";
 		};
 		112223D7201DC78B00B3DBC0 /* 专用图层 */ = {
@@ -848,6 +860,7 @@
 				1196EFD623A51DD700BCD5FB /* 飘落的雪花 */,
 				113BCAE323A5E41D00E4F169 /* 自动旋转的太极 */,
 				113BCAEC23A66BDA00E4F169 /* 下雪效果 */,
+				1116A97323D83DA800775666 /* 下雨效果 */,
 			);
 			name = "动画实例";
 			sourceTree = "<group>";
@@ -1254,6 +1267,7 @@
 				115175581FAED8AD0076F7F6 /* changeOpacityController.m in Sources */,
 				115175551FAECBC20076F7F6 /* threeMethodsController.m in Sources */,
 				113BCAEB23A5E7FC00E4F169 /* TaijiView.m in Sources */,
+				1116A97623D83DD700775666 /* RainViewController.m in Sources */,
 				1135C75A2025F5790053B7E8 /* CAProgressController.m in Sources */,
 				115036B11FD3B3A400A33761 /* ConvertPointController.m in Sources */,
 				117FF90C1FE61E95003F2ADA /* beyondRangeController.m in Sources */,

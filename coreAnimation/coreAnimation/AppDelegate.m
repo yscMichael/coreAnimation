@@ -11,6 +11,7 @@
 #import "fallingSnowViewController.h"
 #import "TaijiViewController.h"
 #import "EmitterViewController.h"
+#import "RainViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,10 +30,11 @@
     //fallingSnowViewController *fallingCtrl = [[fallingSnowViewController alloc] init];
     //自动旋转的太极
     //TaijiViewController *taijiViewCtrl = [[TaijiViewController alloc] init];
-    //礼花效果
-    EmitterViewController *emitterViewCtrl = [[EmitterViewController alloc] init];
-
-    self.window.rootViewController = emitterViewCtrl;
+    //雪花效果
+    //EmitterViewController *emitterViewCtrl = [[EmitterViewController alloc] init];
+    //下雨效果
+    RainViewController *rainViewCtrl = [[RainViewController alloc] init];
+    self.window.rootViewController = rainViewCtrl;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
