@@ -45,6 +45,7 @@
 		115AE3181F938CF800989785 /* coreAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 115AE3171F938CF800989785 /* coreAnimationUITests.m */; };
 		115B1DF7201F478200C6EE93 /* CAShapeLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B1DF6201F478200C6EE93 /* CAShapeLayerController.m */; };
 		115B1DFA201F4A3D00C6EE93 /* BezierPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 115B1DF9201F4A3D00C6EE93 /* BezierPathView.m */; };
+		1163940B23BDABE3003B2FA0 /* EmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163940A23BDABE3003B2FA0 /* EmitterViewController.m */; };
 		116A84FC20287EB60084C337 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116A84FB20287EB60084C337 /* CircleViewController.m */; };
 		116A84FF20287EF30084C337 /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 116A84FE20287EF30084C337 /* CircleView.m */; };
 		117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF8FE1FE6149E003F2ADA /* expandButtonAreaController.m */; };
@@ -177,6 +178,8 @@
 		115B1DF6201F478200C6EE93 /* CAShapeLayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAShapeLayerController.m; sourceTree = "<group>"; };
 		115B1DF8201F4A3D00C6EE93 /* BezierPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathView.h; sourceTree = "<group>"; };
 		115B1DF9201F4A3D00C6EE93 /* BezierPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathView.m; sourceTree = "<group>"; };
+		1163940923BDABE3003B2FA0 /* EmitterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmitterViewController.h; sourceTree = "<group>"; };
+		1163940A23BDABE3003B2FA0 /* EmitterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmitterViewController.m; sourceTree = "<group>"; };
 		116A84FA20287EB60084C337 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
 		116A84FB20287EB60084C337 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
 		116A84FD20287EF30084C337 /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
@@ -356,11 +359,12 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		113BCAEC23A66BDA00E4F169 /* 礼花效果 */ = {
+		113BCAEC23A66BDA00E4F169 /* 下雪效果 */ = {
 			isa = PBXGroup;
 			children = (
+				1163940823BDABC5003B2FA0 /* Controller */,
 			);
-			name = "礼花效果";
+			name = "下雪效果";
 			sourceTree = "<group>";
 		};
 		1148BD6620197FC900E8C277 /* 仿射变换 */ = {
@@ -710,6 +714,15 @@
 			path = coreAnimationUITests;
 			sourceTree = "<group>";
 		};
+		1163940823BDABC5003B2FA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1163940923BDABE3003B2FA0 /* EmitterViewController.h */,
+				1163940A23BDABE3003B2FA0 /* EmitterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		116A84F820287E7E0084C337 /* 进度条列表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -834,7 +847,7 @@
 			children = (
 				1196EFD623A51DD700BCD5FB /* 飘落的雪花 */,
 				113BCAE323A5E41D00E4F169 /* 自动旋转的太极 */,
-				113BCAEC23A66BDA00E4F169 /* 礼花效果 */,
+				113BCAEC23A66BDA00E4F169 /* 下雪效果 */,
 			);
 			name = "动画实例";
 			sourceTree = "<group>";
@@ -1130,6 +1143,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1195,6 +1209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				117FF9421FE658F9003F2ADA /* shadowPathController.m in Sources */,
+				1163940B23BDABE3003B2FA0 /* EmitterViewController.m in Sources */,
 				117FF8FF1FE6149E003F2ADA /* expandButtonAreaController.m in Sources */,
 				11F04F71204EB4010041610C /* TextLayerListController.m in Sources */,
 				117FF92F1FE64BF5003F2ADA /* cornerViewController.m in Sources */,

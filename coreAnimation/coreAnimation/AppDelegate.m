@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "fallingSnowViewController.h"
 #import "TaijiViewController.h"
+#import "EmitterViewController.h"
 
 @interface AppDelegate ()
 
@@ -24,10 +25,14 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:viewCtrl];
     self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
 
+    //飘落的雪花
     //fallingSnowViewController *fallingCtrl = [[fallingSnowViewController alloc] init];
-    TaijiViewController *taijiViewCtrl = [[TaijiViewController alloc] init];
+    //自动旋转的太极
+    //TaijiViewController *taijiViewCtrl = [[TaijiViewController alloc] init];
+    //礼花效果
+    EmitterViewController *emitterViewCtrl = [[EmitterViewController alloc] init];
 
-    self.window.rootViewController = taijiViewCtrl;
+    self.window.rootViewController = emitterViewCtrl;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
