@@ -70,6 +70,7 @@
 		117FF9431FE658F9003F2ADA /* shadowPathController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9411FE658F9003F2ADA /* shadowPathController.xib */; };
 		117FF9481FE6663F003F2ADA /* MaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117FF9461FE6663F003F2ADA /* MaskViewController.m */; };
 		117FF9491FE6663F003F2ADA /* MaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 117FF9471FE6663F003F2ADA /* MaskViewController.xib */; };
+		1191059C2408A42600ADC9B5 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1191059B2408A42600ADC9B5 /* LoadingViewController.m */; };
 		1196EFD923A51E1E00BCD5FB /* fallingSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1196EFD823A51E1E00BCD5FB /* fallingSnowViewController.m */; };
 		11F04F6E204EB3760041610C /* LabelLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F6D204EB3760041610C /* LabelLayerController.m */; };
 		11F04F71204EB4010041610C /* TextLayerListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04F70204EB4010041610C /* TextLayerListController.m */; };
@@ -221,6 +222,8 @@
 		117FF9451FE6663F003F2ADA /* MaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskViewController.h; sourceTree = "<group>"; };
 		117FF9461FE6663F003F2ADA /* MaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskViewController.m; sourceTree = "<group>"; };
 		117FF9471FE6663F003F2ADA /* MaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskViewController.xib; sourceTree = "<group>"; };
+		1191059A2408A42600ADC9B5 /* LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		1191059B2408A42600ADC9B5 /* LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		1196EFD723A51E1E00BCD5FB /* fallingSnowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fallingSnowViewController.h; sourceTree = "<group>"; };
 		1196EFD823A51E1E00BCD5FB /* fallingSnowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fallingSnowViewController.m; sourceTree = "<group>"; };
 		1196EFDA23A5217600BCD5FB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -854,9 +857,19 @@
 			name = "图层蒙版";
 			sourceTree = "<group>";
 		};
+		119105992408A3CB00ADC9B5 /* 加载圈 */ = {
+			isa = PBXGroup;
+			children = (
+				1191059A2408A42600ADC9B5 /* LoadingViewController.h */,
+				1191059B2408A42600ADC9B5 /* LoadingViewController.m */,
+			);
+			name = "加载圈";
+			sourceTree = "<group>";
+		};
 		1196EFD523A51DC300BCD5FB /* 动画实例 */ = {
 			isa = PBXGroup;
 			children = (
+				119105992408A3CB00ADC9B5 /* 加载圈 */,
 				1196EFD623A51DD700BCD5FB /* 飘落的雪花 */,
 				113BCAE323A5E41D00E4F169 /* 自动旋转的太极 */,
 				113BCAEC23A66BDA00E4F169 /* 下雪效果 */,
@@ -1228,6 +1241,7 @@
 				117FF92F1FE64BF5003F2ADA /* cornerViewController.m in Sources */,
 				11F9C8C91FEF87B80052515C /* DynamicMaskImprovedController.m in Sources */,
 				115AE2FA1F938CF800989785 /* ViewController.m in Sources */,
+				1191059C2408A42600ADC9B5 /* LoadingViewController.m in Sources */,
 				115AE2F71F938CF800989785 /* AppDelegate.m in Sources */,
 				1151755E1FAF3A580076F7F6 /* layerShowImageController.m in Sources */,
 				115036BD1FD3EBA200A33761 /* ZPositionController.m in Sources */,

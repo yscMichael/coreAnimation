@@ -12,6 +12,7 @@
 #import "TaijiViewController.h"
 #import "EmitterViewController.h"
 #import "RainViewController.h"
+#import "LoadingViewController.h"
 
 @interface AppDelegate ()
 
@@ -33,8 +34,10 @@
     //雪花效果
     //EmitterViewController *emitterViewCtrl = [[EmitterViewController alloc] init];
     //下雨效果
-    RainViewController *rainViewCtrl = [[RainViewController alloc] init];
-    self.window.rootViewController = rainViewCtrl;
+    //RainViewController *rainViewCtrl = [[RainViewController alloc] init];
+    //旋转效果
+    LoadingViewController *loadingViewCtrl = [[LoadingViewController alloc] init];
+    self.window.rootViewController = loadingViewCtrl;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
