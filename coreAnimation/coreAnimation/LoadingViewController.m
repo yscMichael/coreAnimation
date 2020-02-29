@@ -16,7 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    [self testOne];
+    
+//    CAShapeLayer *layer = [CAShapeLayer new];
+//    layer.lineWidth = 10;
+//    //圆环的颜色
+//    layer.strokeColor = [UIColor redColor].CGColor;
+//    //背景填充色
+//    layer.fillColor = [UIColor clearColor].CGColor;
+//    //设置半径为10
+//    CGFloat radius = 100;
+//    //按照顺时针方向
+//    BOOL clockWise = true;
+//    //初始化一个路径
+//    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:self.view.center radius:radius startAngle:(0) endAngle:2*M_PI clockwise:clockWise];
+//    layer.path = [path CGPath];
+//    [self.view.layer addSublayer:layer];
+}
+
+- (void)testOne{
     //声明加载view的动画路径
     UIBezierPath *pacmanOpenPath;
     CGFloat radius = 40.0f;
